@@ -14,7 +14,7 @@ import { chatPubSub } from '@/lib/copilot/chat-status'
 import { withRouteHandler } from '@/lib/core/utils/with-route-handler'
 import { createWorkspaceSSE } from '@/lib/events/sse-endpoint'
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 const mothershipEventsHandler = createWorkspaceSSE({
   label: 'mothership-events',

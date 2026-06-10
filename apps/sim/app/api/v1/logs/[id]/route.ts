@@ -17,6 +17,8 @@ import {
 
 const logger = createLogger('V1LogDetailsAPI')
 
+export const dynamic = 'force-static'
+
 export const revalidate = 0
 
 export const GET = withRouteHandler(

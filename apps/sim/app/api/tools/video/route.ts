@@ -27,7 +27,7 @@ const MAX_VIDEO_OUTPUT_BYTES = 250 * 1024 * 1024
 const MAX_VIDEO_REFERENCE_IMAGE_BYTES = 25 * 1024 * 1024
 const MAX_VIDEO_JSON_BYTES = 2 * 1024 * 1024
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 /**
  * Mirrors the maximum plan execution timeout (enterprise async, 90 minutes) used by
  * `getMaxExecutionTimeout()` for the provider polling loops below. Next.js requires a

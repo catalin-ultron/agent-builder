@@ -29,6 +29,8 @@ import {
 
 const logger = createLogger('OrganizationsAPI')
 
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(async (request: NextRequest) => {
   try {
     const session = await getSession()

@@ -21,6 +21,8 @@ interface RouteParams {
  * the client's "about to run" overlay so refresh during a long Run-all keeps
  * the queued indicators on rows the dispatcher hasn't reached yet.
  */
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(async (request: NextRequest, { params }: RouteParams) => {
   const requestId = generateRequestId()
 

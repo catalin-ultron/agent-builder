@@ -24,6 +24,8 @@ interface OpenRouterResponse {
   data: OpenRouterModel[]
 }
 
+export const dynamic = 'force-static'
+
 export interface OpenRouterModelInfo {
   id: string
   contextLength?: number

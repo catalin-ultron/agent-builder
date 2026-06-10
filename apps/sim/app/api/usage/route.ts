@@ -18,6 +18,8 @@ const logger = createLogger('UnifiedUsageAPI')
  * GET/PUT /api/usage?context=user|organization&userId=<id>&organizationId=<id>
  *
  */
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(async (request: NextRequest) => {
   const session = await getSession()
 

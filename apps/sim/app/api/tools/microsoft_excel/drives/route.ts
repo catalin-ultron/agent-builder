@@ -10,7 +10,7 @@ import { refreshAccessTokenIfNeeded } from '@/app/api/auth/oauth/utils'
 import { extractGraphError, GRAPH_ID_PATTERN } from '@/tools/microsoft_excel/utils'
 import { assertGraphNextPageUrl, getGraphNextPageUrl } from '@/tools/sharepoint/utils'
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 const logger = createLogger('MicrosoftExcelDrivesAPI')
 

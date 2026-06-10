@@ -44,6 +44,8 @@ async function getCredentialSetWithAccess(credentialSetId: string, userId: strin
   return { set, role: membership.role }
 }
 
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(
   async (req: NextRequest, { params }: { params: Promise<{ id: string }> }) => {
     const session = await getSession()

@@ -18,6 +18,8 @@ import type { TraceSpan, WorkflowExecutionLog } from '@/lib/logs/types'
 
 const logger = createLogger('LogsByExecutionIdAPI')
 
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(
   async (request: NextRequest, { params }: { params: Promise<{ executionId: string }> }) => {
     const requestId = generateRequestId()

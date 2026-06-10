@@ -9,7 +9,7 @@ import { validateWorkflowAccess } from '@/app/api/workflows/middleware'
 const logger = createLogger('WorkflowResumeExecutionAPI')
 
 export const runtime = 'nodejs'
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 export const GET = withRouteHandler(
   async (

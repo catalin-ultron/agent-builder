@@ -11,7 +11,7 @@ import { createErrorResponse, FileNotFoundError } from '@/app/api/files/utils'
 
 const logger = createLogger('FileDownload')
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 export const POST = withRouteHandler(async (request: NextRequest) => {
   try {

@@ -64,7 +64,7 @@ function getTtsErrorMessage(error: Record<string, unknown>, fallback: string): s
   return fallback
 }
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 export const maxDuration = 60 // 1 minute
 
 export const POST = withRouteHandler(async (request: NextRequest) => {

@@ -9,7 +9,7 @@ import { refreshAccessTokenIfNeeded } from '@/app/api/auth/oauth/utils'
 
 const logger = createLogger('CalcomSchedulesAPI')
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 interface CalcomSchedule {
   id: number

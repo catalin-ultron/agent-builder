@@ -20,7 +20,7 @@ import {
 
 const logger = createLogger('WorkflowMcpServersAPI')
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 /**
  * GET - List all workflow MCP servers for the workspace

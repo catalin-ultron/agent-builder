@@ -19,6 +19,8 @@ import { withRouteHandler } from '@/lib/core/utils/with-route-handler'
 
 const logger = createLogger('SSORegisterRoute')
 
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler(async (request: NextRequest) => {
   try {
     if (!env.SSO_ENABLED) {

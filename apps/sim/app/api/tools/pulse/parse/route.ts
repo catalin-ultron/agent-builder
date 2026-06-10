@@ -13,7 +13,7 @@ import { withRouteHandler } from '@/lib/core/utils/with-route-handler'
 import { isInternalFileUrl } from '@/lib/uploads/utils/file-utils'
 import { resolveFileInputToUrl } from '@/lib/uploads/utils/file-utils.server'
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 const logger = createLogger('PulseParseAPI')
 

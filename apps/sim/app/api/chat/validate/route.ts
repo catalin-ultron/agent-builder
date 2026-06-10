@@ -13,6 +13,8 @@ const logger = createLogger('ChatValidateAPI')
 /**
  * GET endpoint to validate chat identifier availability
  */
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(async (request: NextRequest) => {
   try {
     const { searchParams } = new URL(request.url)

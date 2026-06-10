@@ -12,6 +12,8 @@ import { withRouteHandler } from '@/lib/core/utils/with-route-handler'
 
 const logger = createLogger('DeleteChatAPI')
 
+export const dynamic = 'force-static'
+
 export const DELETE = withRouteHandler(async (request: NextRequest) => {
   try {
     const session = await getSession()

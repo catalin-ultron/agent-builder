@@ -17,7 +17,7 @@ import {
 
 const logger = createLogger('McpServerAPI')
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 /**
  * PATCH - Update an MCP server in the workspace (requires write or admin permission)

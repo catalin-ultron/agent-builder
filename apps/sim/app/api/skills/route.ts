@@ -18,6 +18,8 @@ import { getUserEntityPermissions } from '@/lib/workspaces/permissions/utils'
 const logger = createLogger('SkillsAPI')
 
 /** GET - Fetch all skills for a workspace */
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(async (request: NextRequest) => {
   const requestId = generateRequestId()
 

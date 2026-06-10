@@ -15,6 +15,8 @@ import {
 
 const logger = createLogger('V1ExecutionAPI')
 
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(
   async (request: NextRequest, context: { params: Promise<{ executionId: string }> }) => {
     try {

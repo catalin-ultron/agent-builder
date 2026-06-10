@@ -35,6 +35,8 @@ const logger = createLogger('ForkChatAPI')
  * Creates a new chat branched from the given chat, keeping messages up to and
  * including the specified message. Resources and copilot-side state are copied.
  */
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler(
   async (request: NextRequest, context: { params: Promise<{ chatId: string }> }) => {
     try {

@@ -26,6 +26,8 @@ const logger = createLogger('BillingUpdateCostAPI')
  * the Go client span AND this Sim server span sharing one trace, with
  * the actual usage/overage work nested below.
  */
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler((req: NextRequest) =>
   withIncomingGoSpan(
     req.headers,

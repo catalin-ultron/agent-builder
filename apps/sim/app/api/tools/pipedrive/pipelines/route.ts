@@ -9,7 +9,7 @@ import { refreshAccessTokenIfNeeded } from '@/app/api/auth/oauth/utils'
 
 const logger = createLogger('PipedrivePipelinesAPI')
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 const PIPEDRIVE_PAGE_LIMIT = 500
 const PIPEDRIVE_MAX_PIPELINES_PAGES = 50

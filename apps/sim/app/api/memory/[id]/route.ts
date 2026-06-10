@@ -49,7 +49,7 @@ async function validateMemoryAccess(
   return { userId: authResult.userId }
 }
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 export const runtime = 'nodejs'
 
 export const GET = withRouteHandler(async (request: NextRequest, context: MemoryRouteContext) => {

@@ -13,6 +13,8 @@ import { getFromEmailAddress } from '@/lib/messaging/email/utils'
 
 const logger = createLogger('HelpAPI')
 
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler(async (req: NextRequest) => {
   const requestId = generateRequestId()
 

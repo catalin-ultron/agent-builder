@@ -18,7 +18,7 @@ import { withRouteHandler } from '@/lib/core/utils/with-route-handler'
 
 const logger = createLogger('A2AResubscribeAPI')
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 export const POST = withRouteHandler(async (request: NextRequest) => {
   const requestId = generateRequestId()

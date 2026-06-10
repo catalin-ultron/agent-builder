@@ -11,6 +11,8 @@ import { withRouteHandler } from '@/lib/core/utils/with-route-handler'
  * Returns connected OAuth credentials for the authenticated user.
  * Used by the copilot store for credential masking.
  */
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(async (req: NextRequest) => {
   const parsed = await parseRequest(copilotCredentialsContract, req, {})
   if (!parsed.success) return parsed.response

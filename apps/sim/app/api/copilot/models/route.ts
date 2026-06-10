@@ -33,6 +33,8 @@ function isRawAvailableModel(item: unknown): item is RawAvailableModel {
   )
 }
 
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(async (req: NextRequest) => {
   const parsed = await parseRequest(copilotModelsContract, req, {})
   if (!parsed.success) return parsed.response

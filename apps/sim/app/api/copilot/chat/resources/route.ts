@@ -32,6 +32,8 @@ const VALID_RESOURCE_TYPES = new Set<ResourceType>([
 ])
 const GENERIC_TITLES = new Set(['Table', 'File', 'Workflow', 'Knowledge Base', 'Folder', 'Log'])
 
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler(async (req: NextRequest) => {
   try {
     const { userId, isAuthenticated } = await authenticateCopilotRequestSessionOnly()

@@ -10,6 +10,8 @@ import { createAthenaClient } from '@/app/api/tools/athena/utils'
 
 const logger = createLogger('AthenaListNamedQueries')
 
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler(async (request: NextRequest) => {
   try {
     const auth = await checkInternalAuth(request)

@@ -50,7 +50,7 @@ import { getBrandConfig } from '@/ee/whitelabeling'
 
 const logger = createLogger('A2AServeAPI')
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 export const runtime = 'nodejs'
 
 interface RouteParams {

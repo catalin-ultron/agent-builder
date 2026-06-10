@@ -15,7 +15,7 @@ import {
 
 const logger = createLogger('V1TablesAPI')
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 export const revalidate = 0
 
 /** GET /api/v1/tables — List all tables in a workspace. */

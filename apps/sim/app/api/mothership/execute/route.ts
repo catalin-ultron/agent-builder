@@ -23,6 +23,8 @@ import {
   isWorkspaceAccessDeniedError,
 } from '@/lib/workspaces/permissions/utils'
 
+export const dynamic = 'force-static'
+
 export const maxDuration = 3600
 
 const logger = createLogger('MothershipExecuteAPI')

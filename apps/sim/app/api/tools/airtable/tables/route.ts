@@ -10,7 +10,7 @@ import { refreshAccessTokenIfNeeded } from '@/app/api/auth/oauth/utils'
 
 const logger = createLogger('AirtableTablesAPI')
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 export const POST = withRouteHandler(async (request: NextRequest) => {
   const requestId = generateRequestId()

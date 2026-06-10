@@ -12,7 +12,7 @@ interface DiscordServer {
   icon: string | null
 }
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 const logger = createLogger('DiscordServersAPI')
 

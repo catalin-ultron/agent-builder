@@ -9,7 +9,7 @@ import { refreshAccessTokenIfNeeded } from '@/app/api/auth/oauth/utils'
 
 const logger = createLogger('AirtableBasesAPI')
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 const AIRTABLE_MAX_BASES_PAGES = 50
 

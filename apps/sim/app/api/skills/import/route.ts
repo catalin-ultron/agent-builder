@@ -41,6 +41,8 @@ function toRawGitHubUrl(url: string): string {
 }
 
 /** POST - Fetch a SKILL.md from a GitHub URL and return its raw content */
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler(async (req: NextRequest) => {
   const requestId = generateRequestId()
 

@@ -15,7 +15,7 @@ import { parseAtlassianErrorMessage } from '@/tools/jira/utils'
 
 const logger = createLogger('ConfluenceBlogPostsAPI')
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 /**
  * List all blog posts or get a specific blog post

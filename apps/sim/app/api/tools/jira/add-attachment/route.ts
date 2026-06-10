@@ -12,7 +12,7 @@ import { getJiraCloudId, parseAtlassianErrorMessage } from '@/tools/jira/utils'
 
 const logger = createLogger('JiraAddAttachmentAPI')
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 export const POST = withRouteHandler(async (request: NextRequest) => {
   const requestId = `jira-attach-${Date.now()}`

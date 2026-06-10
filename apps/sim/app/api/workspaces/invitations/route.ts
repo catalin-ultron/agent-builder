@@ -7,7 +7,7 @@ import { getSession } from '@/lib/auth'
 import { withRouteHandler } from '@/lib/core/utils/with-route-handler'
 import { listInvitationsForWorkspaces } from '@/lib/invitations/core'
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 const logger = createLogger('WorkspaceInvitationsAPI')
 

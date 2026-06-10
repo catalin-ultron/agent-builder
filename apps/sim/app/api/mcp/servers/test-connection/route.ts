@@ -23,7 +23,7 @@ import { createMcpErrorResponse, createMcpSuccessResponse } from '@/lib/mcp/util
 
 const logger = createLogger('McpServerTestAPI')
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 /**
  * Check if transport type requires a URL

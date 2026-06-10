@@ -21,6 +21,8 @@ const logger = createLogger('WorkspacePresignedAPI')
  * uploads the bytes directly to S3/Blob, then calls /files/register to
  * insert metadata.
  */
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler(
   async (request: NextRequest, context: { params: Promise<{ id: string }> }) => {
     const session = await getSession()

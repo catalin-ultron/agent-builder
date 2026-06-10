@@ -21,7 +21,7 @@ import { checkKnowledgeBaseAccess, type KnowledgeBaseAccessResult } from '@/app/
 import { handleError } from '@/app/api/v1/knowledge/utils'
 import { authenticateRequest, validateWorkspaceAccess } from '@/app/api/v1/middleware'
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 export const revalidate = 0
 
 /** POST /api/v1/knowledge/search — Vector search across knowledge bases. */

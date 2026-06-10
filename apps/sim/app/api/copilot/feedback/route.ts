@@ -21,6 +21,8 @@ const logger = createLogger('CopilotFeedbackAPI')
  * POST /api/copilot/feedback
  * Submit feedback for a copilot interaction
  */
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler(async (req: NextRequest) => {
   const tracker = createRequestTracker()
 

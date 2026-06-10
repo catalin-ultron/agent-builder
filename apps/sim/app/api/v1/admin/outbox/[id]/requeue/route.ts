@@ -11,7 +11,7 @@ import { withAdminAuthParams } from '@/app/api/v1/admin/middleware'
 
 const logger = createLogger('AdminOutboxRequeueAPI')
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 const invalidOutboxEventResponse = (message: string) =>
   NextResponse.json({ success: false, error: message }, { status: 400 })

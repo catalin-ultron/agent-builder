@@ -22,6 +22,8 @@ const logger = createLogger('WorkspaceRegisterAPI')
  * and recording an audit log. Validates the storage key belongs to the
  * caller's workspace to prevent cross-tenant key smuggling.
  */
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler(
   async (request: NextRequest, context: { params: Promise<{ id: string }> }) => {
     const session = await getSession()

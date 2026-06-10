@@ -31,6 +31,8 @@ import {
 import { toStreamBatchEvent } from '@/lib/copilot/request/session/types'
 import { withRouteHandler } from '@/lib/core/utils/with-route-handler'
 
+export const dynamic = 'force-static'
+
 export const maxDuration = 3600
 
 const logger = createLogger('CopilotChatStreamAPI')

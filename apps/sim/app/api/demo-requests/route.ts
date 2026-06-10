@@ -23,6 +23,8 @@ const PUBLIC_ENDPOINT_RATE_LIMIT: TokenBucketConfig = {
   refillIntervalMs: 60_000,
 }
 
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler(async (req: NextRequest) => {
   const requestId = generateRequestId()
 

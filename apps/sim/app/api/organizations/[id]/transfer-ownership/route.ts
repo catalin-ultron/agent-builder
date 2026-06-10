@@ -16,6 +16,8 @@ import { withRouteHandler } from '@/lib/core/utils/with-route-handler'
 
 const logger = createLogger('TransferOwnershipAPI')
 
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler(
   async (request: NextRequest, context: { params: Promise<{ id: string }> }) => {
     try {

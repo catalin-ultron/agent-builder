@@ -12,7 +12,7 @@ import { uploadFilesForTeamsMessage } from '@/tools/microsoft_teams/server-utils
 import type { GraphApiErrorResponse, GraphChatMessage } from '@/tools/microsoft_teams/types'
 import { resolveMentionsForChat, type TeamsMention } from '@/tools/microsoft_teams/utils'
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 const logger = createLogger('TeamsWriteChatAPI')
 

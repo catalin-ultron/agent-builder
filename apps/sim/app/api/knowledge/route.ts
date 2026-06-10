@@ -22,6 +22,8 @@ import { captureServerEvent } from '@/lib/posthog/server'
 
 const logger = createLogger('KnowledgeBaseAPI')
 
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(async (req: NextRequest) => {
   const requestId = generateRequestId()
 

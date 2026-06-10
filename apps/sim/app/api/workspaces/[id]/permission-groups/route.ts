@@ -19,6 +19,8 @@ import { checkWorkspaceAccess, hasWorkspaceAdminAccess } from '@/lib/workspaces/
 
 const logger = createLogger('WorkspacePermissionGroups')
 
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(
   async (_req: NextRequest, { params }: { params: Promise<{ id: string }> }) => {
     const session = await getSession()

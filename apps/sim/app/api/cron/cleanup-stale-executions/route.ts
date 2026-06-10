@@ -15,6 +15,8 @@ const STALE_THRESHOLD_MS = getMaxExecutionTimeout() + 5 * 60 * 1000
 const STALE_THRESHOLD_MINUTES = Math.ceil(STALE_THRESHOLD_MS / 60000)
 const MAX_INT32 = 2_147_483_647
 
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(async (request: NextRequest) => {
   try {
     const authError = verifyCronAuth(request, 'Stale execution cleanup')

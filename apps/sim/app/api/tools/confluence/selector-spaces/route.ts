@@ -17,7 +17,7 @@ import { parseAtlassianErrorMessage } from '@/tools/jira/utils'
 
 const logger = createLogger('ConfluenceSelectorSpacesAPI')
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 const PAGE_LIMIT = 250
 

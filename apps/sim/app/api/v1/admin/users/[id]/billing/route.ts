@@ -52,6 +52,8 @@ interface RouteParams {
   id: string
 }
 
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(
   withAdminAuthParams<RouteParams>(async (request, context) => {
     const parsed = await parseRequest(adminV1GetUserBillingContract, request, context, {

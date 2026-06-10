@@ -11,7 +11,7 @@ import { refreshAccessTokenIfNeeded, ServiceAccountTokenError } from '@/app/api/
 
 const logger = createLogger('GoogleTasksTaskListsAPI')
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 const MAX_TASK_LIST_PAGES = 20
 const TASK_LIST_PAGE_SIZE = 1000

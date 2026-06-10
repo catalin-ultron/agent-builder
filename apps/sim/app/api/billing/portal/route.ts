@@ -13,6 +13,8 @@ import { withRouteHandler } from '@/lib/core/utils/with-route-handler'
 
 const logger = createLogger('BillingPortal')
 
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler(async (request: NextRequest) => {
   const session = await getSession()
 

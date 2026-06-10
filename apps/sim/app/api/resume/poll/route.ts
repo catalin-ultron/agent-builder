@@ -16,7 +16,7 @@ import type { PausePoint } from '@/executor/types'
 
 const logger = createLogger('TimePauseResumePoll')
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 export const maxDuration = 120
 
 const LOCK_KEY = 'time-pause-resume-poll-lock'

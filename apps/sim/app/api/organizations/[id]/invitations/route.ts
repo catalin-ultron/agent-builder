@@ -37,6 +37,8 @@ interface WorkspaceGrantPayload {
   permission: 'admin' | 'write' | 'read'
 }
 
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(
   async (request: NextRequest, { params }: { params: Promise<{ id: string }> }) => {
     try {

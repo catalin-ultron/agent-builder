@@ -10,6 +10,8 @@ import { getUserEntityPermissions } from '@/lib/workspaces/permissions/utils'
 
 const logger = createLogger('WorkspaceFileMoveAPI')
 
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler(
   async (request: NextRequest, context: { params: Promise<{ id: string }> }) => {
     const session = await getSession()

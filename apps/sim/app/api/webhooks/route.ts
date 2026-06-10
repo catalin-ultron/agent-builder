@@ -35,7 +35,7 @@ import { extractCredentialSetId, isCredentialSetValue } from '@/executor/constan
 
 const logger = createLogger('WebhooksAPI')
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 async function revertSavedWebhook(
   savedWebhook: any,

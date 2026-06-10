@@ -13,7 +13,7 @@ interface DiscordChannel {
   guild_id?: string
 }
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 const logger = createLogger('DiscordChannelsAPI')
 

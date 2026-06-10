@@ -99,6 +99,8 @@ function extractError(executionData: unknown): string | null {
   return null
 }
 
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(
   async (
     request: NextRequest,

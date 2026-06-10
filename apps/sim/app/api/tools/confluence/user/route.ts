@@ -10,7 +10,7 @@ import { parseAtlassianErrorMessage } from '@/tools/jira/utils'
 
 const logger = createLogger('ConfluenceUserAPI')
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 /**
  * Get a Confluence user by account ID.

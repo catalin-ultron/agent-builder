@@ -21,6 +21,8 @@ const logger = createLogger('DataDrainAPI')
 
 type RouteContext = { params: Promise<{ id: string; drainId: string }> }
 
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(async (request: NextRequest, context: RouteContext) => {
   const { id: organizationId, drainId } = await context.params
   const access = await authorizeDrainAccess(organizationId, { requireMutating: false })

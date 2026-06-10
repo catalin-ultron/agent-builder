@@ -22,6 +22,8 @@ const logger = createLogger('BatchPresignedUploadAPI')
 
 const VALID_UPLOAD_TYPES = ['knowledge-base', 'chat', 'copilot', 'profile-pictures'] as const
 
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler(async (request: NextRequest) => {
   try {
     const session = await getSession()

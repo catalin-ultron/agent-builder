@@ -18,6 +18,8 @@ const logger = createLogger('EnrichmentRunAPI')
  * authenticates with the internal token. The cascade injects the workspace's
  * BYOK / hosted key via `executeTool` using `workspaceId`.
  */
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler(async (request: NextRequest) => {
   const authResult = await checkInternalAuth(request, { requireWorkflowId: false })
   if (!authResult.success) {

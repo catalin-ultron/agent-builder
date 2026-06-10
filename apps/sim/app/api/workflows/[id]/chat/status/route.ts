@@ -16,6 +16,8 @@ const logger = createLogger('ChatStatusAPI')
 /**
  * GET endpoint to check if a workflow has an active chat deployment
  */
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(
   async (request: NextRequest, context: { params: Promise<{ id: string }> }) => {
     const parsed = await parseRequest(getChatDeploymentStatusContract, request, context)

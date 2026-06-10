@@ -7,6 +7,7 @@ import {
   getProviderBySlug,
 } from '@/app/(landing)/models/utils'
 
+export const dynamic = 'force-static'
 export const runtime = 'edge'
 export const contentType = 'image/png'
 export const size = {

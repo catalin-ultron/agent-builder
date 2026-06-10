@@ -26,6 +26,8 @@ interface ColumnsRouteParams {
 }
 
 /** POST /api/table/[tableId]/columns - Adds a column to the table schema. */
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler(async (request: NextRequest, context: ColumnsRouteParams) => {
   const requestId = generateRequestId()
   const { tableId } = await context.params

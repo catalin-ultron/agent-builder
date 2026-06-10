@@ -10,7 +10,7 @@ import { processFilesToUserFiles, type RawFileInput } from '@/lib/uploads/utils/
 import { downloadFileFromStorage } from '@/lib/uploads/utils/file-utils.server'
 import { assertToolFileAccess } from '@/app/api/files/authorization'
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 const logger = createLogger('BoxUploadAPI')
 

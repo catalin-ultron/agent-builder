@@ -14,6 +14,8 @@ import {
 } from '@/app/api/v1/admin/responses'
 
 const logger = createLogger('AdminWorkflowActivateVersionAPI')
+export const dynamic = 'force-static'
+
 export const maxDuration = 120
 
 interface RouteParams {

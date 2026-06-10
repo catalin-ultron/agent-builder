@@ -25,6 +25,8 @@ const logger = createLogger('CopilotChatStopAPI')
 // POST /api/copilot/chat/stop — persists partial assistant content
 // when the user stops mid-stream. Lock release is handled by the
 // aborted server stream unwinding, not this handler.
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler((req: NextRequest) =>
   withIncomingGoSpan(req.headers, TraceSpan.CopilotChatStopStream, undefined, async (span) => {
     try {

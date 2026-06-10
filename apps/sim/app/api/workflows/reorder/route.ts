@@ -20,6 +20,8 @@ import { getUserEntityPermissions } from '@/lib/workspaces/permissions/utils'
 
 const logger = createLogger('WorkflowReorderAPI')
 
+export const dynamic = 'force-static'
+
 export const PUT = withRouteHandler(async (req: NextRequest) => {
   const requestId = generateRequestId()
   const auth = await checkSessionOrInternalAuth(req, { requireWorkflowId: false })

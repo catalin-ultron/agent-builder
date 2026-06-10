@@ -33,6 +33,8 @@ import {
 
 const logger = createLogger('AdminSubscriptionsAPI')
 
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(
   withAdminAuth(async (request) => {
     const parsed = await parseRequest(

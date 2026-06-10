@@ -10,7 +10,7 @@ import { parseAtlassianErrorMessage } from '@/tools/jira/utils'
 
 const logger = createLogger('ConfluenceAttachmentsAPI')
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 // List attachments on a page
 export const GET = withRouteHandler(async (request: NextRequest) => {

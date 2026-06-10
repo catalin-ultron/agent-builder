@@ -11,6 +11,8 @@ import type { Neo4jNodeSchema, Neo4jRelationshipSchema } from '@/tools/neo4j/typ
 
 const logger = createLogger('Neo4jIntrospectAPI')
 
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler(async (request: NextRequest) => {
   const requestId = generateId().slice(0, 8)
   let driver = null

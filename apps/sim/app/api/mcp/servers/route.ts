@@ -21,7 +21,7 @@ import {
 
 const logger = createLogger('McpServersAPI')
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 /**
  * GET - List all registered MCP servers for the workspace

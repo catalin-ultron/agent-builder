@@ -13,7 +13,7 @@ import { parseAtlassianErrorMessage } from '@/tools/jira/utils'
 
 const logger = createLogger('ConfluenceCommentsAPI')
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 // Create a comment
 export const POST = withRouteHandler(async (request: NextRequest) => {

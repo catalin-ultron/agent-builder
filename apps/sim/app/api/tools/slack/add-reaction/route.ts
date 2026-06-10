@@ -5,7 +5,7 @@ import { parseRequest } from '@/lib/api/server'
 import { checkInternalAuth } from '@/lib/auth/hybrid'
 import { withRouteHandler } from '@/lib/core/utils/with-route-handler'
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 export const POST = withRouteHandler(async (request: NextRequest) => {
   try {

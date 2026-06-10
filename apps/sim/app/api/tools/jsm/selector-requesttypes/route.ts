@@ -12,7 +12,7 @@ import { getJsmApiBaseUrl, getJsmHeaders } from '@/tools/jsm/utils'
 
 const logger = createLogger('JsmSelectorRequestTypesAPI')
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 const JSM_REQUEST_TYPES_PAGE_SIZE = 100
 const MAX_JSM_REQUEST_TYPES_PAGES = 50

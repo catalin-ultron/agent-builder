@@ -19,7 +19,7 @@ import {
   VALID_EXPORT_FORMATS,
 } from '@/tools/google_drive/utils'
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 const logger = createLogger('GoogleDriveDownloadAPI')
 

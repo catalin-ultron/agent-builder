@@ -18,6 +18,8 @@ import { getUserEntityPermissions } from '@/lib/workspaces/permissions/utils'
 const logger = createLogger('FolderDuplicateAPI')
 
 // POST /api/folders/[id]/duplicate - Duplicate a folder with all its child folders and workflows
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler(
   async (req: NextRequest, context: { params: Promise<{ id: string }> }) => {
     const { id: sourceFolderId } = await context.params

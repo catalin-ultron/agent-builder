@@ -4,7 +4,7 @@ import { verifyCronAuth } from '@/lib/auth/internal'
 import { dispatchCleanupJobs } from '@/lib/billing/cleanup-dispatcher'
 import { withRouteHandler } from '@/lib/core/utils/with-route-handler'
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 const logger = createLogger('SoftDeleteCleanupAPI')
 

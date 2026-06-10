@@ -33,6 +33,8 @@ import { captureServerEvent } from '@/lib/posthog/server'
 
 const logger = createLogger('MothershipChatAPI')
 
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(
   async (request: NextRequest, context: { params: Promise<{ chatId: string }> }) => {
     try {

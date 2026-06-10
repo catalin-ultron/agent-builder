@@ -16,7 +16,7 @@ import {
 } from '@/lib/oauth/utils'
 import { checkWorkspaceAccess } from '@/lib/workspaces/permissions/utils'
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 const logger = createLogger('OAuthCredentialsAPI')
 

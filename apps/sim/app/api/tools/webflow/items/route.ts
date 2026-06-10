@@ -10,7 +10,7 @@ import { refreshAccessTokenIfNeeded } from '@/app/api/auth/oauth/utils'
 
 const logger = createLogger('WebflowItemsAPI')
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 const WEBFLOW_PAGE_LIMIT = 100
 const WEBFLOW_MAX_ITEMS_PAGES = 50

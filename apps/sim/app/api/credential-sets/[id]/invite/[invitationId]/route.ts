@@ -39,6 +39,8 @@ async function getCredentialSetWithAccess(credentialSetId: string, userId: strin
   return { set, role: membership.role }
 }
 
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler(
   async (
     req: NextRequest,

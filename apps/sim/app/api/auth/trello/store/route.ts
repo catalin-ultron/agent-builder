@@ -14,7 +14,7 @@ import { safeAccountInsert } from '@/app/api/auth/oauth/utils'
 
 const logger = createLogger('TrelloStore')
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 const TRELLO_STATE_COOKIE = 'trello_oauth_state'
 const TRELLO_STATE_COOKIE_PATH = '/api/auth/trello'

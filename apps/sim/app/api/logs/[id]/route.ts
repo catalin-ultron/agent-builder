@@ -8,6 +8,8 @@ import { fetchLogDetail } from '@/lib/logs/fetch-log-detail'
 
 const logger = createLogger('LogDetailsByIdAPI')
 
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(
   async (request: NextRequest, context: { params: Promise<{ id: string }> }) => {
     const authResult = await checkSessionOrInternalAuth(request, { requireWorkflowId: false })

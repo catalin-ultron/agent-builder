@@ -27,6 +27,8 @@ const logger = createLogger('OrgMemberUsageLimitAPI')
  * hosted-only (the feature is meaningless where Sim does not own the DB/billing).
  * `memberId` is the target user id, so external members are supported.
  */
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(
   async (request: NextRequest, context: { params: Promise<{ id: string; memberId: string }> }) => {
     const session = await getSession()

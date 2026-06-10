@@ -35,6 +35,8 @@ const CAPTCHA_UNAVAILABLE_RATE_LIMIT: TokenBucketConfig = {
 
 const SUCCESS_RESPONSE = { success: true, message: "Thanks — we'll be in touch soon." }
 
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler(async (req: NextRequest) => {
   const requestId = generateRequestId()
 

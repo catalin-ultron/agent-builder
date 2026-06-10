@@ -36,7 +36,7 @@ function isTerminalEvent(event: ExecutionEvent): boolean {
 }
 
 export const runtime = 'nodejs'
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 export const GET = withRouteHandler(
   async (req: NextRequest, context: { params: Promise<{ id: string; executionId: string }> }) => {

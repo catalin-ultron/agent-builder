@@ -36,6 +36,8 @@ type OrganizationDetailsResponse = {
  * GET /api/organizations/[id]
  * Get organization details including settings and seat information
  */
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(
   async (request: NextRequest, { params }: { params: Promise<{ id: string }> }) => {
     try {

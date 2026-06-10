@@ -29,6 +29,8 @@ const logger = createLogger('MothershipChatsAPI')
  * GET /api/mothership/chats?workspaceId=xxx
  * Returns mothership (home) chats for the authenticated user in the given workspace.
  */
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(async (request: NextRequest) => {
   try {
     const { userId, isAuthenticated } = await authenticateCopilotRequestSessionOnly()

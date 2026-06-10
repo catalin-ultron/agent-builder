@@ -58,6 +58,8 @@ function collectDescendantFolderIds(
   return folderIds
 }
 
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(
   async (request: NextRequest, context: { params: Promise<{ id: string }> }) => {
     const session = await getSession()

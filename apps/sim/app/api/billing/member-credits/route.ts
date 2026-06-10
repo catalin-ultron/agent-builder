@@ -16,6 +16,8 @@ import { withRouteHandler } from '@/lib/core/utils/with-route-handler'
  * per-member cap applies: non-hosted, the workspace isn't org-owned, or no cap is
  * set for this member.
  */
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(async (request: NextRequest) => {
   const session = await getSession()
   if (!session?.user?.id) {

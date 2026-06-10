@@ -40,7 +40,7 @@ function toChatConfigResponse(deployment: ChatConfigSource) {
   }
 }
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 export const runtime = 'nodejs'
 
 const CHAT_MAX_REQUEST_BYTES = Number.parseInt(env.CHAT_MAX_REQUEST_BYTES, 10) || 220 * 1024 * 1024

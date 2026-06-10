@@ -41,6 +41,8 @@ import { buildFilterConditions } from '@/app/api/v1/audit-logs/query'
 
 const logger = createLogger('AdminAuditLogsAPI')
 
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(
   withAdminAuth(async (request) => {
     const url = new URL(request.url)

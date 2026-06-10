@@ -22,6 +22,8 @@ import { syncAllWebhooksForCredentialSet } from '@/lib/webhooks/utils.server'
 
 const logger = createLogger('CredentialSetInviteToken')
 
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(
   async (req: NextRequest, context: { params: Promise<{ token: string }> }) => {
     const parsed = await parseRequest(getCredentialSetInvitationContract, req, context)

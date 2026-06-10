@@ -9,6 +9,8 @@ import { createDynamoDBClient, deleteItem } from '@/app/api/tools/dynamodb/utils
 
 const logger = createLogger('DynamoDBDeleteAPI')
 
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler(async (request: NextRequest) => {
   try {
     const auth = await checkInternalAuth(request)

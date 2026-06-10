@@ -9,7 +9,7 @@ import { refreshAccessTokenIfNeeded } from '@/app/api/auth/oauth/utils'
 
 const logger = createLogger('AsanaWorkspacesAPI')
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 const ASANA_PAGE_LIMIT = 100
 const ASANA_MAX_WORKSPACES_PAGES = 50

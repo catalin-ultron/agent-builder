@@ -25,6 +25,8 @@ const logger = createLogger('KnowledgeConnectorsAPI')
 /**
  * GET /api/knowledge/[id]/connectors - List connectors for a knowledge base
  */
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(
   async (request: NextRequest, { params }: { params: Promise<{ id: string }> }) => {
     const requestId = generateRequestId()

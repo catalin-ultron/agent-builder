@@ -14,7 +14,7 @@ import { parseAtlassianErrorMessage } from '@/tools/jira/utils'
 
 const logger = createLogger('ConfluenceLabelsAPI')
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 // Add a label to a page
 export const POST = withRouteHandler(async (request: NextRequest) => {

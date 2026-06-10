@@ -13,6 +13,8 @@ import {
 
 const logger = createLogger('WorkflowStatusAPI')
 
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(
   async (request: NextRequest, context: { params: Promise<{ id: string }> }) => {
     const requestId = generateRequestId()

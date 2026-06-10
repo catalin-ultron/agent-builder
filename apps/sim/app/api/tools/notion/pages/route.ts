@@ -11,7 +11,7 @@ import { extractTitleFromItem } from '@/tools/notion/utils'
 
 const logger = createLogger('NotionPagesAPI')
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 const NOTION_PAGE_SIZE = 100
 

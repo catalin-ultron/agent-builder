@@ -17,6 +17,8 @@ import { calculateCost } from '@/providers/utils'
 
 const logger = createLogger('DocumentChunksAPI')
 
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(
   async (req: NextRequest, { params }: { params: Promise<{ id: string; documentId: string }> }) => {
     const requestId = generateRequestId()

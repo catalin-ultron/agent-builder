@@ -11,7 +11,7 @@ import { refreshAccessTokenIfNeeded, ServiceAccountTokenError } from '@/app/api/
 
 const logger = createLogger('GoogleBigQueryTablesAPI')
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 const MAX_TABLE_PAGES = 20
 const TABLE_PAGE_SIZE = 200

@@ -72,6 +72,8 @@ async function forwardToCopilot(
   }
 }
 
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(async (req: NextRequest) => {
   const userId = await getAuthorizedSuperUserId()
   if (!userId) {

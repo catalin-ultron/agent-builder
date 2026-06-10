@@ -4,6 +4,8 @@ import { parseRequest } from '@/lib/api/server'
 import { handleUnifiedChatPost, maxDuration } from '@/lib/copilot/chat/post'
 import { GET as getChat } from '@/app/api/copilot/chat/queries'
 
+export const dynamic = 'force-static'
+
 export { maxDuration }
 
 export const POST = handleUnifiedChatPost

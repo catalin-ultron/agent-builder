@@ -29,6 +29,8 @@ function toIsoDuration(value: number, unit: 'minutes' | 'hours' | 'days'): strin
   }
 }
 
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler(async (request: NextRequest) => {
   try {
     const auth = await checkInternalAuth(request)

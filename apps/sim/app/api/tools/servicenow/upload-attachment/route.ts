@@ -13,7 +13,7 @@ import { assertToolFileAccess } from '@/app/api/files/authorization'
 import type { ServiceNowAttachment } from '@/tools/servicenow/types'
 import { createBasicAuthHeader } from '@/tools/servicenow/utils'
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 const logger = createLogger('ServiceNowUploadAttachmentAPI')
 

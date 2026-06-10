@@ -21,6 +21,8 @@ const STREAM_ABORT_SETTLE_TIMEOUT_MS = 8000
 
 // POST /api/copilot/chat/abort — fires on user Stop; marks the Go
 // side aborted then waits for the prior stream to settle.
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler((request: NextRequest) =>
   withIncomingGoSpan(
     request.headers,

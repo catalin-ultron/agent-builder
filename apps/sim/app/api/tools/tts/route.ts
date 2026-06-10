@@ -18,6 +18,8 @@ import { StorageService } from '@/lib/uploads'
 const logger = createLogger('ProxyTTSAPI')
 const MAX_TTS_AUDIO_BYTES = 25 * 1024 * 1024
 
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler(async (request: NextRequest) => {
   try {
     const authResult = await checkInternalAuth(request, { requireWorkflowId: false })

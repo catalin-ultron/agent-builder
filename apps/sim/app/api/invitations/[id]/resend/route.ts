@@ -23,6 +23,8 @@ import { getWorkspaceInvitePolicy } from '@/lib/workspaces/policy'
 
 const logger = createLogger('InvitationResendAPI')
 
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler(
   async (request: NextRequest, { params }: { params: Promise<{ id: string }> }) => {
     const parsedParams = invitationParamsSchema.safeParse(await params)

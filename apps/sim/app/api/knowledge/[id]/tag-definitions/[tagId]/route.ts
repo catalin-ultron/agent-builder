@@ -8,7 +8,7 @@ import { withRouteHandler } from '@/lib/core/utils/with-route-handler'
 import { deleteTagDefinition } from '@/lib/knowledge/tags/service'
 import { checkKnowledgeBaseWriteAccess } from '@/app/api/knowledge/utils'
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 const logger = createLogger('TagDefinitionAPI')
 

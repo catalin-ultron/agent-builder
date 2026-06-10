@@ -10,7 +10,7 @@ import { withRouteHandler } from '@/lib/core/utils/with-route-handler'
 import { getFileExtension, getMimeTypeFromExtension } from '@/lib/uploads/utils/file-utils'
 import { createSftpConnection, getSftp, isPathSafe, sanitizePath } from '@/app/api/tools/sftp/utils'
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 const logger = createLogger('SftpDownloadAPI')
 

@@ -21,7 +21,7 @@ import { verifyWorkspaceMembership } from '@/app/api/workflows/utils'
 
 const logger = createLogger('ScheduleAPI')
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 type ScheduleRow = {
   id: string

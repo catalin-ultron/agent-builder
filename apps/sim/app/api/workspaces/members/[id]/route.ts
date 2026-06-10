@@ -22,6 +22,8 @@ import {
 const logger = createLogger('WorkspaceMemberAPI')
 
 // DELETE /api/workspaces/members/[id] - Remove a member from a workspace
+export const dynamic = 'force-static'
+
 export const DELETE = withRouteHandler(
   async (req: NextRequest, context: { params: Promise<{ id: string }> }) => {
     const session = await getSession()

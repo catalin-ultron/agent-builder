@@ -18,6 +18,8 @@ const logger = createLogger('WhitelabelAPI')
  * Returns the organization's whitelabel settings.
  * Accessible by any member of the organization.
  */
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(
   async (_request: NextRequest, { params }: { params: Promise<{ id: string }> }) => {
     try {

@@ -20,7 +20,7 @@ import { verifyWorkspaceMembership } from '@/app/api/workflows/utils'
 
 const logger = createLogger('SpeechTokenAPI')
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 const ELEVENLABS_TOKEN_URL = 'https://api.elevenlabs.io/v1/single-use-token/realtime_scribe'
 

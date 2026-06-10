@@ -29,7 +29,7 @@ import {
 
 const logger = createLogger('V1TableRowAPI')
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 export const revalidate = 0
 
 interface RowRouteParams {

@@ -7,7 +7,7 @@ import { withRouteHandler } from '@/lib/core/utils/with-route-handler'
 
 const logger = createLogger('TrelloCallback')
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 const TRELLO_STATE_COOKIE = 'trello_oauth_state'
 

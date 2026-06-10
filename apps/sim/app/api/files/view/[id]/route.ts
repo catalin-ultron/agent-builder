@@ -11,6 +11,8 @@ import { verifyFileAccess } from '@/app/api/files/authorization'
 
 const logger = createLogger('FilesViewAPI')
 
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(
   async (request: NextRequest, context: { params: Promise<{ id: string }> }) => {
     const parsed = await parseRequest(fileViewContract, request, context)

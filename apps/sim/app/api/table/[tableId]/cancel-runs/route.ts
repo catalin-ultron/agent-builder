@@ -20,6 +20,8 @@ interface RouteParams {
  * Cancels in-flight and pending workflow-column runs for this table. Scopes:
  * `all` (every cell) or `row` (every cell for `rowId`).
  */
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler(async (request: NextRequest, { params }: RouteParams) => {
   const requestId = generateRequestId()
 

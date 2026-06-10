@@ -11,7 +11,7 @@ import { refreshAccessTokenIfNeeded, ServiceAccountTokenError } from '@/app/api/
 
 const logger = createLogger('GoogleBigQueryDatasetsAPI')
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 const MAX_DATASET_PAGES = 20
 const DATASET_PAGE_SIZE = 200

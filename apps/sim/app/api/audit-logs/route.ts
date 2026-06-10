@@ -16,7 +16,7 @@ import {
 
 const logger = createLogger('AuditLogsAPI')
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 export const GET = withRouteHandler(async (request: NextRequest) => {
   try {

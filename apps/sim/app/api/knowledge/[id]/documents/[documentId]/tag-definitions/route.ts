@@ -15,7 +15,7 @@ import {
 import type { BulkTagDefinitionsData } from '@/lib/knowledge/tags/types'
 import { checkDocumentAccess, checkDocumentWriteAccess } from '@/app/api/knowledge/utils'
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 const logger = createLogger('DocumentTagDefinitionsAPI')
 

@@ -13,7 +13,7 @@ import { withRouteHandler } from '@/lib/core/utils/with-route-handler'
 
 const logger = createLogger('ShopifyCallback')
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 /**
  * Validates the HMAC signature from Shopify to ensure the request is authentic

@@ -19,6 +19,8 @@ type RouteParams = { params: Promise<{ id: string; connectorId: string }> }
  * GET /api/knowledge/[id]/connectors/[connectorId]/documents
  * Returns documents for a connector, optionally including user-excluded ones.
  */
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(async (request: NextRequest, { params }: RouteParams) => {
   const requestId = generateRequestId()
   const { id: knowledgeBaseId, connectorId } = await params

@@ -8,7 +8,7 @@ import type { ThinkingToolResponse } from '@/tools/thinking/types'
 
 const logger = createLogger('ThinkingToolAPI')
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 /**
  * POST - Process a thinking tool request

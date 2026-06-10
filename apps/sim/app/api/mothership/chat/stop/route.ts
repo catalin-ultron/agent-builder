@@ -4,6 +4,8 @@ import { validationErrorResponse } from '@/lib/api/server'
 import { withRouteHandler } from '@/lib/core/utils/with-route-handler'
 import { POST as copilotStopPost } from '@/app/api/copilot/chat/stop/route'
 
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler(async (request: NextRequest) => {
   // boundary-raw-json: shim pre-validates the mothership envelope before delegating to the copilot handler that consumes the body
   const body = await request

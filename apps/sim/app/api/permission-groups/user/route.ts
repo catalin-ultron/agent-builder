@@ -9,6 +9,8 @@ import { withRouteHandler } from '@/lib/core/utils/with-route-handler'
 import { parsePermissionGroupConfig } from '@/lib/permission-groups/types'
 import { checkWorkspaceAccess } from '@/lib/workspaces/permissions/utils'
 
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(async (req: Request) => {
   const session = await getSession()
   if (!session?.user?.id) {

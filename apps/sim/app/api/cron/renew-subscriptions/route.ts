@@ -194,6 +194,8 @@ async function renewExpiringSubscriptions(): Promise<{
  * Acknowledges the cron call immediately and renews subscriptions in the
  * background; a Redis lock prevents overlapping runs.
  */
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(async (request: NextRequest) => {
   const authError = verifyCronAuth(request, 'Teams subscription renewal')
   if (authError) {

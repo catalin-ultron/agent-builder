@@ -18,6 +18,8 @@ import { expandFolderIdsWithDescendants } from '@/lib/logs/folder-expansion'
 
 const logger = createLogger('LogsStatsAPI')
 
+export const dynamic = 'force-static'
+
 export const revalidate = 0
 
 export const GET = withRouteHandler(async (request: NextRequest) => {

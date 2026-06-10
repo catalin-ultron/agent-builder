@@ -8,6 +8,8 @@ import { withRouteHandler } from '@/lib/core/utils/with-route-handler'
 
 const logger = createLogger('CredentialSetInvitations')
 
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(async () => {
   const session = await getSession()
 

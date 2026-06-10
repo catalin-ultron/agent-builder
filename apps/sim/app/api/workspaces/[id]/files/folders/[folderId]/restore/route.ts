@@ -13,6 +13,8 @@ import { getUserEntityPermissions } from '@/lib/workspaces/permissions/utils'
 
 const logger = createLogger('WorkspaceFileFolderRestoreAPI')
 
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler(
   async (request: NextRequest, context: { params: Promise<{ id: string; folderId: string }> }) => {
     const session = await getSession()

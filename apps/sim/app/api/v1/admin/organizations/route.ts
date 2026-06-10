@@ -54,6 +54,8 @@ import {
 
 const logger = createLogger('AdminOrganizationsAPI')
 
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(
   withAdminAuth(async (request) => {
     const parsed = await parseRequest(

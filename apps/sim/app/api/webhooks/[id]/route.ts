@@ -24,7 +24,7 @@ import { cleanupExternalWebhook } from '@/lib/webhooks/provider-subscriptions'
 
 const logger = createLogger('WebhookAPI')
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 // Get a specific webhook
 export const GET = withRouteHandler(

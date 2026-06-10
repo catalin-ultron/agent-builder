@@ -14,7 +14,7 @@ import { checkWorkspaceAccess } from '@/lib/workspaces/permissions/utils'
 
 const logger = createLogger('OAuth2Authorize')
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 const DRAFT_TTL_MS = 15 * 60 * 1000
 

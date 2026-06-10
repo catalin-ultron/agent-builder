@@ -8,7 +8,7 @@ import { withRouteHandler } from '@/lib/core/utils/with-route-handler'
 
 const logger = createLogger('IdempotencyCleanupAPI')
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 export const maxDuration = 300 // Allow up to 5 minutes for cleanup
 
 export const GET = withRouteHandler(async (request: NextRequest) => {

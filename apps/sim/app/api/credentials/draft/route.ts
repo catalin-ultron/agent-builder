@@ -14,6 +14,8 @@ const logger = createLogger('CredentialDraftAPI')
 
 const DRAFT_TTL_MS = 15 * 60 * 1000
 
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler(async (request: NextRequest) => {
   try {
     const session = await getSession()

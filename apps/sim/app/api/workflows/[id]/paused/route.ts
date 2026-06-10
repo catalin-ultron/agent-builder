@@ -6,7 +6,7 @@ import { PauseResumeManager } from '@/lib/workflows/executor/human-in-the-loop-m
 import { validateWorkflowAccess } from '@/app/api/workflows/middleware'
 
 export const runtime = 'nodejs'
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 export const GET = withRouteHandler(
   async (request: NextRequest, context: { params: Promise<{ id: string }> }) => {

@@ -15,6 +15,8 @@ const OLLAMA_HOST = getOllamaUrl()
 /**
  * Get available Ollama models
  */
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(async (_request: NextRequest) => {
   if (isProviderBlacklisted('ollama')) {
     logger.info('Ollama provider is blacklisted, returning empty models')

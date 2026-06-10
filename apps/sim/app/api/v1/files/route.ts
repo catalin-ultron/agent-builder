@@ -26,7 +26,7 @@ import {
 
 const logger = createLogger('V1FilesAPI')
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 export const revalidate = 0
 
 const MAX_FILE_SIZE = 100 * 1024 * 1024

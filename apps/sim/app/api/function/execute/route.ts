@@ -44,7 +44,7 @@ import {
   createReferencePattern,
   createWorkflowVariablePattern,
 } from '@/executor/utils/reference-validation'
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 export const runtime = 'nodejs'
 
 const logger = createLogger('FunctionExecuteAPI')

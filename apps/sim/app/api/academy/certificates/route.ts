@@ -28,6 +28,8 @@ const CERT_RATE_LIMIT: TokenBucketConfig = {
  * Completion is client-attested: the client sends completed lesson IDs and the server
  * validates them against the full lesson list for the course.
  */
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler(async (req: NextRequest) => {
   try {
     const session = await getSession()

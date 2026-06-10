@@ -34,7 +34,7 @@ import {
   type ScheduleExecutionPayload,
 } from '@/background/schedule-execution'
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 export const maxDuration = 3600
 
 const logger = createLogger('ScheduledExecuteAPI')

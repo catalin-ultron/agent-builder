@@ -12,7 +12,7 @@ import { getJsmApiBaseUrl, getJsmHeaders } from '@/tools/jsm/utils'
 
 const logger = createLogger('JsmSelectorServiceDesksAPI')
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 const JSM_SERVICE_DESKS_PAGE_SIZE = 100
 const MAX_JSM_SERVICE_DESKS_PAGES = 50

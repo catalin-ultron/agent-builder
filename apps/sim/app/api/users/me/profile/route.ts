@@ -17,7 +17,7 @@ interface UpdateData {
   image?: string | null
 }
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 export const PATCH = withRouteHandler(async (request: NextRequest) => {
   const requestId = generateRequestId()

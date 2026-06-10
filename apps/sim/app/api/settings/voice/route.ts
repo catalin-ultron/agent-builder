@@ -10,6 +10,8 @@ const voiceSettingsResponseSchema = getVoiceSettingsContract.response.schema
  * Unauthenticated — the response is a single boolean,
  * not sensitive data, and deployed chat visitors need it.
  */
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(async () => {
   return NextResponse.json(voiceSettingsResponseSchema.parse({ sttAvailable: hasSTTService() }))
 })

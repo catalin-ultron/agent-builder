@@ -13,6 +13,8 @@ import { withRouteHandler } from '@/lib/core/utils/with-route-handler'
 const logger = createLogger('ApiKeyAPI')
 
 // DELETE /api/users/me/api-keys/[id] - Delete an API key
+export const dynamic = 'force-static'
+
 export const DELETE = withRouteHandler(
   async (request: NextRequest, { params }: { params: Promise<{ id: string }> }) => {
     const requestId = generateRequestId()

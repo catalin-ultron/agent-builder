@@ -10,7 +10,7 @@ import { workflowDeploymentOutboxHandlers } from '@/lib/workflows/deployment-out
 
 const logger = createLogger('OutboxProcessorAPI')
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 export const maxDuration = 120
 
 const handlers = {

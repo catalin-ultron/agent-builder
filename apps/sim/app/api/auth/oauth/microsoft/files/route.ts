@@ -10,7 +10,7 @@ import { getCredential, refreshAccessTokenIfNeeded } from '@/app/api/auth/oauth/
 import { GRAPH_ID_PATTERN } from '@/tools/microsoft_excel/utils'
 import { assertGraphNextPageUrl, getGraphNextPageUrl } from '@/tools/sharepoint/utils'
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 const logger = createLogger('MicrosoftFilesAPI')
 

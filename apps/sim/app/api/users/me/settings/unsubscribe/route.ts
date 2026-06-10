@@ -26,6 +26,8 @@ const UNSUBSCRIBE_RATE_LIMIT = {
   refillIntervalMs: 60_000,
 }
 
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(async (req: NextRequest) => {
   const requestId = generateRequestId()
 

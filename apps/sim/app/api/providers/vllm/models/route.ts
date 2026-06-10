@@ -14,6 +14,8 @@ const logger = createLogger('VLLMModelsAPI')
 /**
  * Get available vLLM models
  */
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(async (_request: NextRequest) => {
   if (isProviderBlacklisted('vllm')) {
     logger.info('vLLM provider is blacklisted, returning empty models')

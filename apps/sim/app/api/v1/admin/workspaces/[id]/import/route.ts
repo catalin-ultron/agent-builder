@@ -75,6 +75,8 @@ interface ParsedWorkflow {
   folderPath: string[]
 }
 
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler(
   withAdminAuthParams<RouteParams>(async (request, context) => {
     const parsed = await parseRequest(adminV1ImportWorkspaceContract, request, context)

@@ -21,6 +21,8 @@ import { getUserEntityPermissions, getWorkspaceById } from '@/lib/workspaces/per
 
 const logger = createLogger('WorkspaceApiKeysAPI')
 
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(
   async (request: NextRequest, { params }: { params: Promise<{ id: string }> }) => {
     const requestId = generateRequestId()

@@ -17,6 +17,8 @@ import type { EnvironmentVariable } from '@/lib/environment/api'
 
 const logger = createLogger('EnvironmentAPI')
 
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler(async (req: NextRequest) => {
   const requestId = generateRequestId()
 

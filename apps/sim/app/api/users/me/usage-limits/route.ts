@@ -13,6 +13,8 @@ import { createErrorResponse } from '@/app/api/workflows/utils'
 
 const logger = createLogger('UsageLimitsAPI')
 
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(async (request: NextRequest) => {
   usageLimitsRequestSchema.parse({})
 

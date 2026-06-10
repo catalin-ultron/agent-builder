@@ -13,6 +13,8 @@ import { getUserEntityPermissions } from '@/lib/workspaces/permissions/utils'
 
 const logger = createLogger('FolderReorderAPI')
 
+export const dynamic = 'force-static'
+
 export const PUT = withRouteHandler(async (req: NextRequest) => {
   const requestId = generateRequestId()
   const session = await getSession()

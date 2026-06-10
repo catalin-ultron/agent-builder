@@ -13,7 +13,7 @@ import { deleteDocument } from '@/lib/knowledge/documents/service'
 import { handleError, resolveKnowledgeBase, serializeDate } from '@/app/api/v1/knowledge/utils'
 import { authenticateRequest } from '@/app/api/v1/middleware'
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 export const revalidate = 0
 
 interface DocumentDetailRouteParams {

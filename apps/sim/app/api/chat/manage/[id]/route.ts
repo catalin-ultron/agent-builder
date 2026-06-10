@@ -16,7 +16,7 @@ import { performChatUndeploy, performFullDeploy } from '@/lib/workflows/orchestr
 import { checkChatAccess } from '@/app/api/chat/utils'
 import { createErrorResponse, createSuccessResponse } from '@/app/api/workflows/utils'
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 export const maxDuration = 120
 
 const logger = createLogger('ChatDetailAPI')

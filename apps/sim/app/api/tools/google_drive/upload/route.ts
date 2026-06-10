@@ -16,7 +16,7 @@ import {
   SOURCE_MIME_TYPES,
 } from '@/tools/google_drive/utils'
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 const logger = createLogger('GoogleDriveUploadAPI')
 

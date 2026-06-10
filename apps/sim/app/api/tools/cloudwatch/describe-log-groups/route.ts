@@ -16,6 +16,8 @@ const LOG_GROUPS_PAGE_SIZE = 50
 /** Upper bound on pages drained to avoid unbounded loops on very large accounts. */
 const MAX_LOG_GROUPS_PAGES = 20
 
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler(async (request: NextRequest) => {
   try {
     const auth = await checkSessionOrInternalAuth(request)

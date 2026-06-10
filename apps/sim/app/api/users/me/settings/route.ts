@@ -27,6 +27,8 @@ const defaultSettings = {
   lastActiveWorkspaceId: null,
 }
 
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(async () => {
   const requestId = generateRequestId()
 

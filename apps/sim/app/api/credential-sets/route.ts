@@ -16,6 +16,8 @@ import { withRouteHandler } from '@/lib/core/utils/with-route-handler'
 
 const logger = createLogger('CredentialSets')
 
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(async (req: Request) => {
   const session = await getSession()
 

@@ -30,6 +30,8 @@ async function loadGroupInWorkspace(groupId: string, workspaceId: string) {
   return group ?? null
 }
 
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler(
   async (req: NextRequest, context: { params: Promise<{ id: string; groupId: string }> }) => {
     const session = await getSession()

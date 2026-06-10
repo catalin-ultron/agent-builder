@@ -9,7 +9,7 @@ import { withRouteHandler } from '@/lib/core/utils/with-route-handler'
 import { getWorkspaceFile } from '@/lib/uploads/contexts/workspace'
 import { verifyWorkspaceMembership } from '@/app/api/workflows/utils'
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 const logger = createLogger('WorkspaceFileDownloadAPI')
 

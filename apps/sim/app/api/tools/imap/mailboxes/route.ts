@@ -10,6 +10,8 @@ import { withRouteHandler } from '@/lib/core/utils/with-route-handler'
 
 const logger = createLogger('ImapMailboxesAPI')
 
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler(async (request: NextRequest) => {
   const session = await getSession()
   if (!session?.user?.id) {

@@ -9,7 +9,7 @@ import { withRouteHandler } from '@/lib/core/utils/with-route-handler'
 import { FileAccessDeniedError } from '@/app/api/files/authorization'
 import { sendSlackMessage } from '@/app/api/tools/slack/utils'
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 const logger = createLogger('SlackSendMessageAPI')
 

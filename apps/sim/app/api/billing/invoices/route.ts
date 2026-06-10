@@ -22,6 +22,8 @@ const MAX_INVOICES = 12
  * customer yet or when Stripe is not configured, so the UI can simply hide the
  * Invoices section instead of surfacing an error.
  */
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(async (request: NextRequest) => {
   const session = await getSession()
   if (!session?.user?.id) {

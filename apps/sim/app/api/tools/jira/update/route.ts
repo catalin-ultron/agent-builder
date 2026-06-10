@@ -8,7 +8,7 @@ import { validateJiraCloudId, validateJiraIssueKey } from '@/lib/core/security/i
 import { withRouteHandler } from '@/lib/core/utils/with-route-handler'
 import { getJiraCloudId, parseAtlassianErrorMessage, toAdf } from '@/tools/jira/utils'
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 const logger = createLogger('JiraUpdateAPI')
 

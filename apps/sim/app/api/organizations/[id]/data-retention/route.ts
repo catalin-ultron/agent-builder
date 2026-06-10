@@ -40,6 +40,8 @@ function normalizeConfigured(
  * Returns the organization's data retention settings.
  * Accessible by any member of the organization.
  */
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(
   async (_request: NextRequest, { params }: { params: Promise<{ id: string }> }) => {
     const session = await getSession()

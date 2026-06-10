@@ -9,6 +9,8 @@ import { createSESClient, getTemplate } from '../utils'
 
 const logger = createLogger('SESGetTemplateAPI')
 
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler(async (request: NextRequest) => {
   const auth = await checkInternalAuth(request)
   if (!auth.success || !auth.userId) {

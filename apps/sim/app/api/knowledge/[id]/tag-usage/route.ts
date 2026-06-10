@@ -8,7 +8,7 @@ import { withRouteHandler } from '@/lib/core/utils/with-route-handler'
 import { getTagUsage } from '@/lib/knowledge/tags/service'
 import { checkKnowledgeBaseAccess } from '@/app/api/knowledge/utils'
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 const logger = createLogger('TagUsageAPI')
 

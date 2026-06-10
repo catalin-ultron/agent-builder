@@ -14,7 +14,7 @@ import { createErrorResponse, createSuccessResponse } from '@/app/api/workflows/
 
 const logger = createLogger('WorkflowDeploymentVersionAPI')
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 export const runtime = 'nodejs'
 export const maxDuration = 120
 

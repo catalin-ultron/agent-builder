@@ -45,6 +45,8 @@ function mapWorkflowGroupError(error: unknown, fallbackMessage: string): NextRes
 }
 
 /** POST /api/table/[tableId]/groups — create a workflow group + its output columns. */
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler(async (request: NextRequest, { params }: RouteParams) => {
   const requestId = generateRequestId()
   try {

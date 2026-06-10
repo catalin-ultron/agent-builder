@@ -10,7 +10,7 @@ import { parseAtlassianErrorMessage } from '@/tools/jira/utils'
 
 const logger = createLogger('ConfluenceAttachmentAPI')
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 // Delete an attachment
 export const DELETE = withRouteHandler(async (request: NextRequest) => {

@@ -19,7 +19,7 @@ import {
 import { assertToolFileAccess } from '@/app/api/files/authorization'
 import { convertUsageMetadata, extractTextContent } from '@/providers/google/utils'
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 const logger = createLogger('VisionAnalyzeAPI')
 

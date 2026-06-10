@@ -9,7 +9,7 @@ import { withRouteHandler } from '@/lib/core/utils/with-route-handler'
 import { updateWorkspaceFileContent } from '@/lib/uploads/contexts/workspace'
 import { getUserEntityPermissions } from '@/lib/workspaces/permissions/utils'
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 const logger = createLogger('WorkspaceFileContentAPI')
 

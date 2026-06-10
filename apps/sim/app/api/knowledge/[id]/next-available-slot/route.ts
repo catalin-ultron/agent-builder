@@ -11,6 +11,8 @@ import { checkKnowledgeBaseAccess } from '@/app/api/knowledge/utils'
 const logger = createLogger('NextAvailableSlotAPI')
 
 // GET /api/knowledge/[id]/next-available-slot - Get the next available tag slot for a knowledge base and field type
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(
   async (req: NextRequest, context: { params: Promise<{ id: string }> }) => {
     const requestId = generateId().slice(0, 8)

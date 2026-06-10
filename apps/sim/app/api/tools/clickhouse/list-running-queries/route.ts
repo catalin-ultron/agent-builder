@@ -10,6 +10,8 @@ import { executeClickHouseListRunningQueries } from '@/app/api/tools/clickhouse/
 
 const logger = createLogger('ClickHouseListRunningQueriesAPI')
 
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler(async (request: NextRequest) => {
   const requestId = generateId().slice(0, 8)
 

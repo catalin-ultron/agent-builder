@@ -28,6 +28,8 @@ interface FireworksModelsResponse {
   object?: string
 }
 
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(async (request: NextRequest) => {
   if (isProviderBlacklisted('fireworks')) {
     logger.info('Fireworks provider is blacklisted, returning empty models')

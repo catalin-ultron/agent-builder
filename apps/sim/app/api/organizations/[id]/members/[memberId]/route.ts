@@ -24,6 +24,8 @@ const logger = createLogger('OrganizationMemberAPI')
  * GET /api/organizations/[id]/members/[memberId]
  * Get individual organization member details
  */
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(
   async (
     request: NextRequest,

@@ -10,6 +10,8 @@ import { checkChunkAccess, checkChunkWriteAccess } from '@/app/api/knowledge/uti
 
 const logger = createLogger('ChunkByIdAPI')
 
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(
   async (
     req: NextRequest,

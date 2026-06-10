@@ -8,6 +8,8 @@ import { hasInboxAccess } from '@/lib/billing/core/subscription'
 import { withRouteHandler } from '@/lib/core/utils/with-route-handler'
 import { getUserEntityPermissions } from '@/lib/workspaces/permissions/utils'
 
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(
   async (req: NextRequest, { params }: { params: Promise<{ id: string }> }) => {
     const paramsResult = inboxWorkspaceParamsSchema.safeParse(await params)

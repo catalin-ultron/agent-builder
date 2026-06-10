@@ -10,6 +10,8 @@ import { executeClickHouseDropPartition } from '@/app/api/tools/clickhouse/utils
 
 const logger = createLogger('ClickHouseDropPartitionAPI')
 
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler(async (request: NextRequest) => {
   const requestId = generateId().slice(0, 8)
 

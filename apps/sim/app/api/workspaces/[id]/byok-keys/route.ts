@@ -27,6 +27,8 @@ function maskApiKey(key: string): string {
   return `${key.slice(0, 6)}...${key.slice(-4)}`
 }
 
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(
   async (request: NextRequest, { params }: { params: Promise<{ id: string }> }) => {
     const requestId = generateRequestId()

@@ -9,6 +9,8 @@ import { rejectInvitation } from '@/lib/invitations/core'
 
 const logger = createLogger('InvitationRejectAPI')
 
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler(
   async (request: NextRequest, context: { params: Promise<{ id: string }> }) => {
     const session = await getSession()

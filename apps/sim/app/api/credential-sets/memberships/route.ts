@@ -14,6 +14,8 @@ import { syncAllWebhooksForCredentialSet } from '@/lib/webhooks/utils.server'
 
 const logger = createLogger('CredentialSetMemberships')
 
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(async () => {
   const session = await getSession()
 

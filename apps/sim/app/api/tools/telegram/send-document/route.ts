@@ -11,7 +11,7 @@ import { downloadFileFromStorage } from '@/lib/uploads/utils/file-utils.server'
 import { assertToolFileAccess } from '@/app/api/files/authorization'
 import { convertMarkdownToHTML } from '@/tools/telegram/utils'
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 const logger = createLogger('TelegramSendDocumentAPI')
 

@@ -20,6 +20,8 @@ type RouteParams = { params: Promise<{ id: string; connectorId: string }> }
 /**
  * POST /api/knowledge/[id]/connectors/[connectorId]/sync - Trigger a manual sync
  */
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler(async (request: NextRequest, context: RouteParams) => {
   const requestId = generateRequestId()
   const parsed = await parseRequest(triggerKnowledgeConnectorSyncContract, request, context)

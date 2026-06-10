@@ -13,7 +13,7 @@ import {
 } from '@/lib/invitations/workspace-invitations'
 import { InvitationsNotAllowedError } from '@/ee/access-control/utils/permission-check'
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 const logger = createLogger('WorkspaceInvitationBatchAPI')
 

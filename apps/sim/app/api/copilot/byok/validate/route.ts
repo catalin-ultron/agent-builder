@@ -25,6 +25,8 @@ const logger = createLogger('CopilotByokValidate')
  * Any other case returns 403 (not entitled) or 401 (bad internal auth). The Go
  * caller fails closed to hosted keys on anything but a 200.
  */
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler(async (req: NextRequest) => {
   const auth = checkInternalApiKey(req)
   if (!auth.success) {

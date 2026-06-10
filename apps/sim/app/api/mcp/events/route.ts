@@ -15,7 +15,7 @@ import { createWorkspaceSSE } from '@/lib/events/sse-endpoint'
 import { mcpConnectionManager } from '@/lib/mcp/connection-manager'
 import { mcpPubSub } from '@/lib/mcp/pubsub'
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 const mcpEventsHandler = createWorkspaceSSE({
   label: 'mcp-events',

@@ -9,6 +9,8 @@ import { listLogs } from '@/lib/logs/list-logs'
 
 const logger = createLogger('LogsAPI')
 
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(async (request: NextRequest) => {
   const authResult = await checkSessionOrInternalAuth(request, { requireWorkflowId: false })
   if (!authResult.success || !authResult.userId) {

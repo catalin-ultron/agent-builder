@@ -30,6 +30,8 @@ import {
 const logger = createLogger('Workspaces')
 
 // Get all workspaces for the current user
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(async (request: Request) => {
   const session = await getSession()
 

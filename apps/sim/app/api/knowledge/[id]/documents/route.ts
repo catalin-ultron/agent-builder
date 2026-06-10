@@ -30,6 +30,8 @@ import { checkKnowledgeBaseAccess, checkKnowledgeBaseWriteAccess } from '@/app/a
 
 const logger = createLogger('DocumentsAPI')
 
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(
   async (req: NextRequest, { params }: { params: Promise<{ id: string }> }) => {
     const requestId = generateId().slice(0, 8)

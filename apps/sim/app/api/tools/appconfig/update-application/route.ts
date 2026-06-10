@@ -10,6 +10,8 @@ import { createAppConfigClient, updateApplication } from '../utils'
 
 const logger = createLogger('AppConfigUpdateApplicationAPI')
 
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler(async (request: NextRequest) => {
   const requestId = generateId().slice(0, 8)
 

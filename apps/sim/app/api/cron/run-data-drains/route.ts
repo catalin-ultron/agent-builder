@@ -8,6 +8,8 @@ import { dispatchDueDrains } from '@/lib/data-drains/dispatcher'
 
 const logger = createLogger('CronRunDataDrains')
 
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(async (request: NextRequest) => {
   const authError = verifyCronAuth(request, 'Data drain dispatcher')
   if (authError) return authError

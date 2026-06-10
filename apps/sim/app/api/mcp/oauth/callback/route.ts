@@ -23,7 +23,7 @@ import { mcpService } from '@/lib/mcp/service'
 
 const logger = createLogger('McpOauthCallbackAPI')
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 function escapeHtml(value: string): string {
   return value

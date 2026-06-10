@@ -7,6 +7,8 @@ import { withRouteHandler } from '@/lib/core/utils/with-route-handler'
  * Deprecated: the v1 headless copilot chat API has been removed. The endpoint
  * returns 410 Gone for all callers.
  */
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler(async () =>
   NextResponse.json(
     {

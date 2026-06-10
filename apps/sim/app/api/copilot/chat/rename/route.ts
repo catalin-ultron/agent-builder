@@ -12,6 +12,8 @@ import { withRouteHandler } from '@/lib/core/utils/with-route-handler'
 
 const logger = createLogger('RenameChatAPI')
 
+export const dynamic = 'force-static'
+
 export const PATCH = withRouteHandler(async (request: NextRequest) => {
   try {
     const session = await getSession()

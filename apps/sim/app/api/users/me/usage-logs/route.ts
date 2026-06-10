@@ -13,6 +13,8 @@ const logger = createLogger('UsageLogsAPI')
  * GET /api/users/me/usage-logs
  * Get usage logs for the authenticated user
  */
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(async (req: NextRequest) => {
   try {
     const auth = await checkSessionOrInternalAuth(req, { requireWorkflowId: false })

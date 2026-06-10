@@ -15,7 +15,7 @@ import { parseAtlassianErrorMessage } from '@/tools/jira/utils'
 
 const logger = createLogger('ConfluenceSpaceAPI')
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 // Get a specific space
 export const GET = withRouteHandler(async (request: NextRequest) => {

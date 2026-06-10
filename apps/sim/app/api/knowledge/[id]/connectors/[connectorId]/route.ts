@@ -31,6 +31,8 @@ type RouteParams = { params: Promise<{ id: string; connectorId: string }> }
 /**
  * GET /api/knowledge/[id]/connectors/[connectorId] - Get connector details with recent sync logs
  */
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(async (request: NextRequest, { params }: RouteParams) => {
   const requestId = generateRequestId()
   const { id: knowledgeBaseId, connectorId } = await params

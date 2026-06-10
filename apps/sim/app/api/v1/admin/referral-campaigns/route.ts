@@ -134,6 +134,8 @@ async function resolveProductIds(
   return [...productIds]
 }
 
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(
   withAdminAuth(async (request) => {
     try {

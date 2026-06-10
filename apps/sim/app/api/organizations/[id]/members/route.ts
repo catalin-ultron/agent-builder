@@ -38,6 +38,8 @@ const logger = createLogger('OrganizationMembersAPI')
  * GET /api/organizations/[id]/members
  * Get organization members with optional usage data
  */
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(
   async (request: NextRequest, { params }: { params: Promise<{ id: string }> }) => {
     try {

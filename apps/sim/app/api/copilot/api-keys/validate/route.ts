@@ -25,6 +25,8 @@ const logger = createLogger('CopilotApiKeysValidate')
  * there's no traceparent (manual curl / browser), the helper falls back to a
  * new root span.
  */
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler((req: NextRequest) =>
   withIncomingGoSpan(
     req.headers,

@@ -6,7 +6,7 @@ import { isRegistrationDisabled } from '@/lib/core/config/feature-flags'
 import { withRouteHandler } from '@/lib/core/utils/with-route-handler'
 import { getOAuthProviderStatus } from '@/app/(auth)/components/oauth-provider-checker'
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 export const GET = withRouteHandler(async (request: NextRequest) => {
   const parsed = await parseRequest(getAuthProvidersContract, request, {})

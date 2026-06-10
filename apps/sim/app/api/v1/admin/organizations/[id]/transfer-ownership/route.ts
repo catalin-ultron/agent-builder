@@ -21,6 +21,8 @@ interface RouteParams {
   id: string
 }
 
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler(
   withAdminAuthParams<RouteParams>(async (request, context) => {
     const routeParams = await context.params

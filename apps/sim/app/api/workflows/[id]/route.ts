@@ -27,6 +27,8 @@ const logger = createLogger('WorkflowByIdAPI')
  * Fetch a single workflow by ID
  * Uses hybrid approach: try normalized tables first, fallback to JSON blob
  */
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(
   async (request: NextRequest, { params }: { params: Promise<{ id: string }> }) => {
     const requestId = generateRequestId()

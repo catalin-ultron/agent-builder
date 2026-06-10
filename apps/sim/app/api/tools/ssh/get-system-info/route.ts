@@ -10,6 +10,8 @@ import { createSSHConnection, executeSSHCommand } from '@/app/api/tools/ssh/util
 
 const logger = createLogger('SSHGetSystemInfoAPI')
 
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler(async (request: NextRequest) => {
   const requestId = generateId().slice(0, 8)
 

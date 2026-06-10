@@ -31,6 +31,8 @@ import { calculateCost } from '@/providers/utils'
 
 const logger = createLogger('VectorSearchAPI')
 
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler(async (request: NextRequest) => {
   const requestId = generateRequestId()
 

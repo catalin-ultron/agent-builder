@@ -39,7 +39,7 @@ function validateFileExtension(filename: string): boolean {
   return ALLOWED_EXTENSIONS.has(extension)
 }
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 const logger = createLogger('FilesUploadAPI')
 

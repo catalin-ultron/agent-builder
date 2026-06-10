@@ -11,6 +11,8 @@ import { withRouteHandler } from '@/lib/core/utils/with-route-handler'
 
 const logger = createLogger('TriggersAPI')
 
+export const dynamic = 'force-static'
+
 export const revalidate = 0
 
 /**

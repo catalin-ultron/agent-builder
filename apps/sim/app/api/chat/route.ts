@@ -14,6 +14,8 @@ import { createErrorResponse, createSuccessResponse } from '@/app/api/workflows/
 
 const logger = createLogger('ChatAPI')
 
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(async (_request: NextRequest) => {
   try {
     const session = await getSession()

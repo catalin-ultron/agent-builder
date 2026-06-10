@@ -10,7 +10,7 @@ import { refreshAccessTokenIfNeeded } from '@/app/api/auth/oauth/utils'
 
 const logger = createLogger('WebflowCollectionsAPI')
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 interface WebflowCollection {
   id: string

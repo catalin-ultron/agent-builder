@@ -21,7 +21,7 @@ import { uploadExecutionFile } from '@/lib/uploads/contexts/execution'
 const logger = createLogger('TypeformFilesAPI')
 const MAX_TYPEFORM_FILE_BYTES = 10 * 1024 * 1024
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 function buildTypeformFileUrl({
   formId,

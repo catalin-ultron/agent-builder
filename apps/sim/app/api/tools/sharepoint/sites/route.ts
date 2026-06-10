@@ -9,7 +9,7 @@ import { refreshAccessTokenIfNeeded } from '@/app/api/auth/oauth/utils'
 import type { SharepointSite } from '@/tools/sharepoint/types'
 import { assertGraphNextPageUrl, getGraphNextPageUrl } from '@/tools/sharepoint/utils'
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 const logger = createLogger('SharePointSitesAPI')
 

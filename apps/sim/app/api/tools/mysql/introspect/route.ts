@@ -10,6 +10,8 @@ import { createMySQLConnection, executeIntrospect } from '@/app/api/tools/mysql/
 
 const logger = createLogger('MySQLIntrospectAPI')
 
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler(async (request: NextRequest) => {
   const requestId = generateId().slice(0, 8)
 

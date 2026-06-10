@@ -17,6 +17,8 @@ interface TableRowsFindRouteParams {
 }
 
 /** GET /api/table/[tableId]/rows/find - Case-insensitive substring search across all cells. */
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(
   async (request: NextRequest, { params }: TableRowsFindRouteParams) => {
     const requestId = generateRequestId()

@@ -12,6 +12,8 @@ import { expandFolderIdsWithDescendants } from '@/lib/logs/folder-expansion'
 
 const logger = createLogger('LogsExportAPI')
 
+export const dynamic = 'force-static'
+
 export const revalidate = 0
 
 function escapeCsv(value: any): string {

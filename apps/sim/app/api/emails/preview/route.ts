@@ -101,6 +101,8 @@ function isEmailTemplate(template: string): template is EmailTemplate {
   return template in emailTemplates
 }
 
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(async (request: NextRequest) => {
   const { searchParams } = new URL(request.url)
   const queryValidation = emailPreviewQuerySchema.safeParse(

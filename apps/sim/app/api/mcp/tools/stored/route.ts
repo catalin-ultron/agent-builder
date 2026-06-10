@@ -11,7 +11,7 @@ import { createMcpErrorResponse, createMcpSuccessResponse } from '@/lib/mcp/util
 
 const logger = createLogger('McpStoredToolsAPI')
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 export const GET = withRouteHandler(
   withMcpAuth('read')(async (request: NextRequest, { userId, workspaceId, requestId }) => {

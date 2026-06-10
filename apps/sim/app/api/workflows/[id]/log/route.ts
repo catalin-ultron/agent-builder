@@ -16,7 +16,7 @@ import type { ExecutionResult } from '@/executor/types'
 
 const logger = createLogger('WorkflowLogAPI')
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 export const POST = withRouteHandler(
   async (request: NextRequest, context: { params: Promise<{ id: string }> }) => {

@@ -64,6 +64,8 @@ async function getAuthorizedAdminUserId() {
  * The request body (for POST) is forwarded as-is. Additional query params
  * (e.g. requestId for GET /traces) are forwarded.
  */
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler(async (req: NextRequest) => {
   const userId = await getAuthorizedAdminUserId()
   if (!userId) {

@@ -27,6 +27,8 @@ import {
 
 const logger = createLogger('AdminWorkspacesAPI')
 
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(
   withAdminAuth(async (request) => {
     const parsed = await parseRequest(adminV1ListWorkspacesContract, request, {})

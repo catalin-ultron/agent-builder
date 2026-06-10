@@ -29,6 +29,8 @@ const logger = createLogger('AgentMailWebhook')
 const AUTOMATED_SENDERS = ['mailer-daemon@', 'noreply@', 'no-reply@', 'postmaster@']
 const MAX_EMAILS_PER_HOUR = 20
 
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler(async (req: Request) => {
   try {
     const rawBody = await req.text()

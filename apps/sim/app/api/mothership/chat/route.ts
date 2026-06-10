@@ -9,6 +9,8 @@ import { handleUnifiedChatPost, maxDuration } from '@/lib/copilot/chat/post'
 import { withRouteHandler } from '@/lib/core/utils/with-route-handler'
 import { GET as copilotChatGet } from '@/app/api/copilot/chat/queries'
 
+export const dynamic = 'force-static'
+
 export { maxDuration }
 
 // Unified chat route surface.

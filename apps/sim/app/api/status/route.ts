@@ -33,6 +33,8 @@ function determineStatus(data: IncidentIOWidgetResponse): {
   return { status: 'operational', message: 'All Systems Operational' }
 }
 
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(async (request: NextRequest) => {
   try {
     const queryValidation = noInputSchema.safeParse(

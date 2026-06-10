@@ -18,6 +18,8 @@ import { checkKnowledgeBaseAccess, checkKnowledgeBaseWriteAccess } from '@/app/a
 
 const logger = createLogger('KnowledgeBaseByIdAPI')
 
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(
   async (_request: NextRequest, { params }: { params: Promise<{ id: string }> }) => {
     const requestId = generateRequestId()

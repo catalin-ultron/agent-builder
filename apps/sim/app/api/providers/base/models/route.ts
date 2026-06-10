@@ -3,6 +3,8 @@ import { providerModelsResponseSchema } from '@/lib/api/contracts/providers'
 import { withRouteHandler } from '@/lib/core/utils/with-route-handler'
 import { getBaseModelProviders } from '@/providers/utils'
 
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(async () => {
   try {
     const allModels = Object.keys(getBaseModelProviders())

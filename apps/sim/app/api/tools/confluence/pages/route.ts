@@ -10,7 +10,7 @@ import { parseAtlassianErrorMessage } from '@/tools/jira/utils'
 
 const logger = createLogger('ConfluencePagesAPI')
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 // List pages or search pages
 export const POST = withRouteHandler(async (request: NextRequest) => {

@@ -20,7 +20,7 @@ import { checkWorkspaceAccess } from '@/lib/workspaces/permissions/utils'
 
 const logger = createLogger('A2AAgentCardAPI')
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 interface RouteParams {
   agentId: string

@@ -8,6 +8,8 @@ import { fetchLogDetail } from '@/lib/logs/fetch-log-detail'
 
 const logger = createLogger('LogDetailsByExecutionAPI')
 
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(
   async (request: NextRequest, context: { params: Promise<{ executionId: string }> }) => {
     const authResult = await checkSessionOrInternalAuth(request, { requireWorkflowId: false })

@@ -27,6 +27,8 @@ const NON_CHAT_MODEL_TYPES = new Set([
   'rerank',
 ])
 
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(async (request: NextRequest) => {
   if (isProviderBlacklisted('together')) {
     logger.info('Together provider is blacklisted, returning empty models')

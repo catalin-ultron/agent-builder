@@ -10,6 +10,8 @@ import { createAppConfigDataClient, getConfiguration } from '../utils'
 
 const logger = createLogger('AppConfigGetConfigurationAPI')
 
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler(async (request: NextRequest) => {
   const requestId = generateId().slice(0, 8)
 

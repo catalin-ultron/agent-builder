@@ -44,6 +44,8 @@ async function requireWorkspaceAdminMembership(credentialId: string, userId: str
   return { ...membership, credentialType: cred.type, workspaceId: cred.workspaceId }
 }
 
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(async (_request: NextRequest, context: RouteContext) => {
   try {
     const session = await getSession()

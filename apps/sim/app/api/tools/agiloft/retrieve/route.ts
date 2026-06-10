@@ -14,7 +14,7 @@ import {
   resolveAgiloftInstance,
 } from '@/tools/agiloft/utils.server'
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 const logger = createLogger('AgiloftRetrieveAPI')
 

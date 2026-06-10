@@ -20,6 +20,8 @@ interface RouteParams {
 }
 
 /** GET /api/table/[tableId]/export - Streams the full table contents as CSV or JSON. */
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(async (request: NextRequest, { params }: RouteParams) => {
   const requestId = generateRequestId()
   const { tableId } = tableIdParamsSchema.parse(await params)

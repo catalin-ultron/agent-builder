@@ -12,6 +12,8 @@ import { pollNoActivityEvents } from '@/lib/workspace-events/no-activity'
 
 const logger = createLogger('WorkspaceEventsPoll')
 
+export const dynamic = 'force-static'
+
 export const maxDuration = 120
 
 const LOCK_KEY = 'workspace-events-no-activity-poll-lock'

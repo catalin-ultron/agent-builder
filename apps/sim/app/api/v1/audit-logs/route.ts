@@ -39,7 +39,7 @@ import { checkRateLimit, createRateLimitResponse } from '@/app/api/v1/middleware
 
 const logger = createLogger('V1AuditLogsAPI')
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 export const revalidate = 0
 
 export const GET = withRouteHandler(async (request: NextRequest) => {

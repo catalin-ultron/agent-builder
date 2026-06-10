@@ -112,6 +112,8 @@ async function handleBatchInsert(
 }
 
 /** POST /api/table/[tableId]/rows - Inserts row(s). Supports single or batch insert. */
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler(
   async (request: NextRequest, context: TableRowsRouteParams) => {
     const requestId = generateRequestId()

@@ -21,6 +21,8 @@ const logger = createLogger('ScheduledAPI')
  *   - workflowId + optional blockId  → single schedule for one workflow
  *   - workspaceId                    → all schedules across the workspace
  */
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(async (req: NextRequest) => {
   const requestId = generateRequestId()
   const url = new URL(req.url)

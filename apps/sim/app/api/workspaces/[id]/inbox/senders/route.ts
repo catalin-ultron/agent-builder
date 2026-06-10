@@ -12,6 +12,8 @@ import { getUserEntityPermissions } from '@/lib/workspaces/permissions/utils'
 
 const logger = createLogger('InboxSendersAPI')
 
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(
   async (_req: NextRequest, { params }: { params: Promise<{ id: string }> }) => {
     const { id: workspaceId } = await params

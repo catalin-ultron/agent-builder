@@ -13,7 +13,7 @@ import { deleteCredential } from '@/lib/credentials/deletion'
 import { captureServerEvent } from '@/lib/posthog/server'
 import { syncAllWebhooksForCredentialSet } from '@/lib/webhooks/utils.server'
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 const logger = createLogger('OAuthDisconnectAPI')
 

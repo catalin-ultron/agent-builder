@@ -25,6 +25,8 @@ const logger = createLogger('CopilotChatsListAPI')
 
 const DEFAULT_COPILOT_MODEL = 'claude-opus-4-6'
 
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(async (_request: NextRequest) => {
   try {
     const { userId, isAuthenticated } = await authenticateCopilotRequestSessionOnly()

@@ -16,7 +16,7 @@ import {
   fetchThreadingHeaders,
 } from '@/tools/gmail/utils'
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 const logger = createLogger('GmailSendAPI')
 

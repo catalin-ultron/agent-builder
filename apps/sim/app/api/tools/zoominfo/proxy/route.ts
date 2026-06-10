@@ -16,7 +16,7 @@ import {
   ZoomInfoProxyRequestSchema,
 } from '@/app/api/tools/zoominfo/shared'
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 const logger = createLogger('ZoomInfoProxyAPI')
 

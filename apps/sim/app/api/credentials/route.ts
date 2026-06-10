@@ -141,6 +141,8 @@ async function findExistingCredentialBySourceTx(
   return findExistingCredentialBySourceWith(tx, params)
 }
 
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(async (request: NextRequest) => {
   const requestId = generateRequestId()
   const session = await getSession()

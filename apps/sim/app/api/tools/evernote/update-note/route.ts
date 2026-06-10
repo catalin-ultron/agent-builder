@@ -7,7 +7,7 @@ import { checkInternalAuth } from '@/lib/auth/hybrid'
 import { withRouteHandler } from '@/lib/core/utils/with-route-handler'
 import { updateNote } from '@/app/api/tools/evernote/lib/client'
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 const logger = createLogger('EvernoteUpdateNoteAPI')
 

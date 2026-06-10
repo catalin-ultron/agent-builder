@@ -25,6 +25,8 @@ const logger = createLogger('WorkflowCheckpointsAPI')
  * POST /api/copilot/checkpoints
  * Create a new checkpoint with JSON workflow state
  */
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler(async (req: NextRequest) => {
   const tracker = createRequestTracker()
 

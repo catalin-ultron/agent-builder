@@ -33,6 +33,8 @@ const logger = createLogger('WorkflowStateAPI')
  * Fetch the current workflow state from normalized tables.
  * Used by the client after server-side edits (edit_workflow) to stay in sync.
  */
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(
   async (request: NextRequest, { params }: { params: Promise<{ id: string }> }) => {
     const { id: workflowId } = await params

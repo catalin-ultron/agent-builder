@@ -105,6 +105,8 @@ async function updateToolCallStatus(
 // POST /api/copilot/confirm — delivery path for client-executed tool
 // results. Correlate via `toolCallId` when the awaiting chat stream
 // stalls.
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler((req: NextRequest) => {
   const tracker = createRequestTracker()
 

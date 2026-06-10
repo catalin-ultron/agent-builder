@@ -31,6 +31,8 @@ const logger = createLogger('WorkspacesPermissionsAPI')
  * @param workspaceId - The workspace ID from the URL parameters
  * @returns Array of users with their permissions for the workspace
  */
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(
   async (request: NextRequest, { params }: { params: Promise<{ id: string }> }) => {
     try {

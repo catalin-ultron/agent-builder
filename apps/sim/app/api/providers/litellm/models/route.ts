@@ -11,6 +11,8 @@ import { filterBlacklistedModels, isProviderBlacklisted } from '@/providers/util
 
 const logger = createLogger('LiteLLMModelsAPI')
 
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(async (_request: NextRequest) => {
   if (isProviderBlacklisted('litellm')) {
     logger.info('LiteLLM provider is blacklisted, returning empty models')

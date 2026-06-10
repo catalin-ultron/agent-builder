@@ -171,6 +171,8 @@ function resolveServeCacheControl(
   return context === 'workspace' ? WORKSPACE_REVALIDATE_CACHE_CONTROL : undefined
 }
 
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(
   async (request: NextRequest, { params }: { params: Promise<{ path: string[] }> }) => {
     try {

@@ -9,6 +9,8 @@ import { withRouteHandler } from '@/lib/core/utils/with-route-handler'
 
 const logger = createLogger('SocketTokenAPI')
 
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler(async (request: NextRequest) => {
   if (isAuthDisabled) {
     return NextResponse.json({ token: 'anonymous-socket-token' })

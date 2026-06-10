@@ -25,6 +25,8 @@ const logger = createLogger('CheckpointRevertAPI')
  * POST /api/copilot/checkpoints/revert
  * Revert workflow to a specific checkpoint state
  */
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler(async (request: NextRequest) => {
   const tracker = createRequestTracker()
 

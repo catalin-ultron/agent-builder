@@ -97,7 +97,7 @@ async function ensurePausedCancellationEventPublished(
 }
 
 export const runtime = 'nodejs'
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 export const POST = withRouteHandler(
   async (req: NextRequest, context: { params: Promise<{ id: string; executionId: string }> }) => {

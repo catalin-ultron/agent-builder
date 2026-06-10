@@ -15,6 +15,8 @@ const logger = createLogger('UnifiedBillingAPI')
 /**
  * Unified Billing Endpoint
  */
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(async (request: NextRequest) => {
   const session = await getSession()
 

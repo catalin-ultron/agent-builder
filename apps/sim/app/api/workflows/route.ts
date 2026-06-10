@@ -16,6 +16,8 @@ import { verifyWorkspaceMembership } from '@/app/api/workflows/utils'
 const logger = createLogger('WorkflowAPI')
 
 // GET /api/workflows - Get workflows for user (optionally filtered by workspaceId)
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(async (request: NextRequest) => {
   const requestId = generateRequestId()
   const startTime = Date.now()

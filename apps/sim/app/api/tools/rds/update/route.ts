@@ -10,6 +10,8 @@ import { createRdsClient, executeUpdate } from '@/app/api/tools/rds/utils'
 
 const logger = createLogger('RDSUpdateAPI')
 
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler(async (request: NextRequest) => {
   const requestId = generateId().slice(0, 8)
 

@@ -31,6 +31,8 @@ const logger = createLogger('SuperUserImportWorkflow')
  *
  * Requires both isSuperUser flag AND superUserModeEnabled setting.
  */
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler(async (request: NextRequest) => {
   try {
     const session = await getSession()

@@ -12,7 +12,7 @@ import { accessError, checkAccess } from '@/app/api/table/utils'
 const logger = createLogger('TableImportCancelAPI')
 
 export const runtime = 'nodejs'
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 interface RouteParams {
   params: Promise<{ tableId: string }>

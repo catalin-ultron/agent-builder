@@ -24,7 +24,7 @@ import type { TranscriptSegment } from '@/tools/stt/types'
 const logger = createLogger('SttProxyAPI')
 const ELEVENLABS_STT_MODEL = 'scribe_v2'
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 /**
  * Mirrors the maximum plan execution timeout (enterprise async, 90 minutes) used by
  * `getMaxExecutionTimeout()` for the transcript polling loop below. Next.js requires a

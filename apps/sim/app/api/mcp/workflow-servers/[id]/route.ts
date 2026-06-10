@@ -26,7 +26,7 @@ import {
 
 const logger = createLogger('WorkflowMcpServerAPI')
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 interface RouteParams {
   id: string

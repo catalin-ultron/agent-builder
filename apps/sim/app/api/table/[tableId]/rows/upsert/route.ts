@@ -18,6 +18,8 @@ interface UpsertRouteParams {
 }
 
 /** POST /api/table/[tableId]/rows/upsert - Inserts or updates based on unique columns. */
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler(async (request: NextRequest, context: UpsertRouteParams) => {
   const requestId = generateRequestId()
   const { tableId } = await context.params

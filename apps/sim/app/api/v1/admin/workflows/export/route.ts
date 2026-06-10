@@ -39,6 +39,8 @@ import {
 
 const logger = createLogger('AdminWorkflowsExportAPI')
 
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler(
   withAdminAuth(async (request) => {
     const parsed = await parseRequest(adminV1ExportWorkflowsContract, request, {})

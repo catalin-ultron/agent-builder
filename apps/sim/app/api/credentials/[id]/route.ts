@@ -41,6 +41,8 @@ async function getCredentialResponse(credentialId: string, userId: string) {
   return row ?? null
 }
 
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(
   async (request: NextRequest, { params }: { params: Promise<{ id: string }> }) => {
     const session = await getSession()

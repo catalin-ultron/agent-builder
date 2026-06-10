@@ -22,6 +22,8 @@ const logger = createLogger('OllamaCloudModelsAPI')
  * usage. Models are listed only when the workspace has stored its own Ollama
  * API key, which is used to authenticate against the cloud `/api/tags` endpoint.
  */
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(async (request: NextRequest) => {
   if (isProviderBlacklisted('ollama-cloud')) {
     logger.info('Ollama Cloud provider is blacklisted, returning empty models')

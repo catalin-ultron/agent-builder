@@ -27,6 +27,8 @@ import { type AdminUser, createPaginationMeta, toAdminUser } from '@/app/api/v1/
 
 const logger = createLogger('AdminUsersAPI')
 
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(
   withAdminAuth(async (request) => {
     const parsed = await parseRequest(

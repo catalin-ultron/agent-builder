@@ -45,7 +45,7 @@ import {
 const logger = createLogger('TableImportCSVExisting')
 
 export const runtime = 'nodejs'
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 export const maxDuration = 300
 
 interface RouteParams {

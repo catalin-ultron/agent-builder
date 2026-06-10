@@ -19,7 +19,7 @@ import { validateFileType } from '@/lib/uploads/utils/validation'
 import { handleError, resolveKnowledgeBase, serializeDate } from '@/app/api/v1/knowledge/utils'
 import { authenticateRequest } from '@/app/api/v1/middleware'
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 export const revalidate = 0
 
 const MAX_FILE_SIZE = 100 * 1024 * 1024 // 100MB

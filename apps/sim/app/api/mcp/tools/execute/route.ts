@@ -29,7 +29,7 @@ import {
 
 const logger = createLogger('McpToolExecutionAPI')
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 interface SchemaProperty {
   type: 'string' | 'number' | 'integer' | 'boolean' | 'object' | 'array'

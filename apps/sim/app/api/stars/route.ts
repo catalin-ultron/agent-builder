@@ -13,6 +13,8 @@ function formatStarCount(num: number): string {
   return formatted.endsWith('.0') ? `${formatted.slice(0, -2)}k` : `${formatted}k`
 }
 
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(async (request: NextRequest) => {
   try {
     const queryValidation = noInputSchema.safeParse(

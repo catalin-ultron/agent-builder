@@ -10,7 +10,7 @@ import { withRouteHandler } from '@/lib/core/utils/with-route-handler'
 
 const logger = createLogger('BillingSeatReconcileCron')
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 const BILLING_SYNC_EVENT_TYPES = [
   OUTBOX_EVENT_TYPES.STRIPE_SYNC_SUBSCRIPTION_SEATS,

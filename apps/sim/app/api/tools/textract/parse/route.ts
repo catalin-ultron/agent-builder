@@ -21,7 +21,7 @@ import {
 } from '@/lib/uploads/utils/file-utils.server'
 import { assertToolFileAccess } from '@/app/api/files/authorization'
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 /**
  * Mirrors the maximum plan execution timeout (enterprise async, 90 minutes) used by
  * `getMaxExecutionTimeout()` for the job polling loop below. Next.js requires a static

@@ -27,7 +27,7 @@ import { executeProviderRequest } from '@/providers'
 
 const logger = createLogger('ProvidersAPI')
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 /**
  * Server-side proxy for provider requests

@@ -10,7 +10,7 @@ import { validateAlphanumericId, validateJiraCloudId } from '@/lib/core/security
 import { withRouteHandler } from '@/lib/core/utils/with-route-handler'
 import { getJiraCloudId, parseAtlassianErrorMessage } from '@/tools/jira/utils'
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 const logger = createLogger('JiraProjectsAPI')
 

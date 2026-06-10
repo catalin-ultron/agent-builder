@@ -33,7 +33,7 @@ const FORMAT_TO_MIME = {
   SVG: 'image/svg+xml',
 } as const
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 function buildExportUrl(presentationId: string, exportFormat: keyof typeof FORMAT_TO_MIME): string {
   const mimeType = FORMAT_TO_MIME[exportFormat]

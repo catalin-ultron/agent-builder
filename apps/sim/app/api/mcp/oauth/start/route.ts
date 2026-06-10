@@ -58,7 +58,7 @@ function truncate(message: string): string {
     : message
 }
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 export const GET = withRouteHandler(
   withMcpAuth('write')(async (request: NextRequest, { userId, workspaceId }) => {

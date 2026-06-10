@@ -17,6 +17,8 @@ import { checkDocumentAccess, checkDocumentWriteAccess } from '@/app/api/knowled
 
 const logger = createLogger('DocumentByIdAPI')
 
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(
   async (req: NextRequest, { params }: { params: Promise<{ id: string; documentId: string }> }) => {
     const requestId = generateRequestId()

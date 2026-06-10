@@ -12,7 +12,7 @@ import { assertGraphNextPageUrl, getGraphNextPageUrl } from '@/tools/sharepoint/
 
 const logger = createLogger('MicrosoftPlannerTasksAPI')
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 /**
  * Upper bound on Microsoft Graph pages drained when listing a plan's tasks.

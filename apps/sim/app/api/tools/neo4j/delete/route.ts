@@ -10,6 +10,8 @@ import { createNeo4jDriver, validateCypherQuery } from '@/app/api/tools/neo4j/ut
 
 const logger = createLogger('Neo4jDeleteAPI')
 
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler(async (request: NextRequest) => {
   const requestId = generateId().slice(0, 8)
   let driver = null

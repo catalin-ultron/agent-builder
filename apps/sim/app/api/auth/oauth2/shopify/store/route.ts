@@ -16,7 +16,7 @@ import { safeAccountInsert } from '@/app/api/auth/oauth/utils'
 
 const logger = createLogger('ShopifyStore')
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 export const GET = withRouteHandler(async (request: NextRequest) => {
   const baseUrl = getBaseUrl()

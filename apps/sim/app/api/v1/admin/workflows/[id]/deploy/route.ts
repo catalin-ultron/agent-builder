@@ -18,6 +18,8 @@ import {
 import type { AdminDeployResult, AdminUndeployResult } from '@/app/api/v1/admin/types'
 
 const logger = createLogger('AdminWorkflowDeployAPI')
+export const dynamic = 'force-static'
+
 export const maxDuration = 120
 
 interface RouteParams {

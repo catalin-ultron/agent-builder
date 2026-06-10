@@ -23,6 +23,8 @@ import { type AdminWorkflow, createPaginationMeta, toAdminWorkflow } from '@/app
 
 const logger = createLogger('AdminWorkflowsAPI')
 
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(
   withAdminAuth(async (request) => {
     const parsed = await parseRequest(adminV1ListWorkflowsContract, request, {})

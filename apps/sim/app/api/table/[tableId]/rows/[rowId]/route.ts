@@ -24,6 +24,8 @@ interface RowRouteParams {
 }
 
 /** GET /api/table/[tableId]/rows/[rowId] - Retrieves a single row. */
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(async (request: NextRequest, { params }: RowRouteParams) => {
   const requestId = generateRequestId()
   const { tableId, rowId } = await params

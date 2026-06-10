@@ -9,7 +9,7 @@ import { SUPPORTED_FIELD_TYPES } from '@/lib/knowledge/constants'
 import { createTagDefinition, getTagDefinitions } from '@/lib/knowledge/tags/service'
 import { checkKnowledgeBaseWriteAccess } from '@/app/api/knowledge/utils'
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 const logger = createLogger('KnowledgeBaseTagDefinitionsAPI')
 

@@ -18,7 +18,7 @@ import {
 
 const logger = createLogger('McpServerRefreshAPI')
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 /** Schema stored in workflow blocks includes description from the tool. */
 type StoredToolSchema = McpToolSchema & { description?: string }

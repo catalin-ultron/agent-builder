@@ -21,6 +21,8 @@ interface GoogleIdToken {
 /**
  * Get all OAuth connections for the current user
  */
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(async (request: NextRequest) => {
   const requestId = generateRequestId()
 

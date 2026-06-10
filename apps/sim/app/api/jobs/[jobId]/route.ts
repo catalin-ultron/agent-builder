@@ -11,6 +11,8 @@ import { createErrorResponse } from '@/app/api/workflows/utils'
 
 const logger = createLogger('TaskStatusAPI')
 
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(
   async (request: NextRequest, context: { params: Promise<{ jobId: string }> }) => {
     const parsed = await parseRequest(getJobStatusContract, request, context)

@@ -16,6 +16,8 @@ import { filterBlacklistedModels, isProviderBlacklisted } from '@/providers/util
 
 const logger = createLogger('BasetenModelsAPI')
 
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(async (request: NextRequest) => {
   if (isProviderBlacklisted('baseten')) {
     logger.info('Baseten provider is blacklisted, returning empty models')

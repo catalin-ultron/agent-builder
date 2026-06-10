@@ -16,6 +16,8 @@ interface TableRouteParams {
 }
 
 /** PUT /api/table/[tableId]/metadata - Update table UI metadata (column widths, etc.) */
+export const dynamic = 'force-static'
+
 export const PUT = withRouteHandler(async (request: NextRequest, context: TableRouteParams) => {
   const requestId = generateRequestId()
 

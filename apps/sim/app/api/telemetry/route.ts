@@ -148,6 +148,8 @@ async function forwardToCollector(data: Record<string, unknown>): Promise<boolea
 /**
  * Endpoint that receives telemetry events and forwards them to OpenTelemetry collector
  */
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler(async (req: NextRequest) => {
   const rateLimited = await enforceIpRateLimit('telemetry', req, {
     maxTokens: 60,

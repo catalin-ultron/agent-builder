@@ -21,6 +21,8 @@ function folderMutationStatus(errorCode: string | undefined): number {
 }
 
 // GET - Fetch folders for a workspace
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(async (request: NextRequest) => {
   try {
     const session = await getSession()

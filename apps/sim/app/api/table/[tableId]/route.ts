@@ -17,6 +17,8 @@ interface TableRouteParams {
 }
 
 /** GET /api/table/[tableId] - Retrieves a single table's details. */
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(async (request: NextRequest, { params }: TableRouteParams) => {
   const requestId = generateRequestId()
   const { tableId } = await params

@@ -15,6 +15,8 @@ import { withRouteHandler } from '@/lib/core/utils/with-route-handler'
 const logger = createLogger('ApiKeysAPI')
 
 // GET /api/users/me/api-keys - Get all API keys for the current user
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(async (request: NextRequest) => {
   try {
     const session = await getSession()

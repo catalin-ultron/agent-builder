@@ -18,6 +18,8 @@ const logger = createLogger('WorkspaceMembersAPI')
  * Intended for UI display (avatars, owner cells) without the overhead of
  * full permission data.
  */
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(
   async (_request: NextRequest, { params }: { params: Promise<{ id: string }> }) => {
     try {

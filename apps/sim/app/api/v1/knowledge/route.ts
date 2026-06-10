@@ -11,7 +11,7 @@ import { createKnowledgeBase, getKnowledgeBases } from '@/lib/knowledge/service'
 import { formatKnowledgeBase, handleError } from '@/app/api/v1/knowledge/utils'
 import { authenticateRequest, validateWorkspaceAccess } from '@/app/api/v1/middleware'
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 export const revalidate = 0
 
 /** GET /api/v1/knowledge — List knowledge bases in a workspace. */

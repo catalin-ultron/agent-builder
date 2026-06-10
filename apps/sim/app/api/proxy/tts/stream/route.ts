@@ -54,6 +54,8 @@ async function validateChatAuth(request: NextRequest, chatId: string): Promise<b
   }
 }
 
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler(async (request: NextRequest) => {
   try {
     const parsed = await parseRequest(

@@ -13,6 +13,8 @@ const logger = createLogger('RestoreFolderAPI')
 
 type RouteContext = { params: Promise<{ id: string }> }
 
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler(async (request: NextRequest, context: RouteContext) => {
   try {
     const session = await getSession()

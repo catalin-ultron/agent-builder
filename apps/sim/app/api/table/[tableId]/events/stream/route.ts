@@ -18,7 +18,7 @@ const HEARTBEAT_INTERVAL_MS = 15_000
 const MAX_STREAM_DURATION_MS = 4 * 60 * 60 * 1000 // 4 hours; client reconnects past this
 
 export const runtime = 'nodejs'
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 interface RouteContext {
   params: Promise<{ tableId: string }>

@@ -10,6 +10,8 @@ import { createSSHConnection, escapeShellArg, executeSSHCommand } from '@/app/ap
 
 const logger = createLogger('SSHCheckCommandExistsAPI')
 
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler(async (request: NextRequest) => {
   const requestId = generateId().slice(0, 8)
 

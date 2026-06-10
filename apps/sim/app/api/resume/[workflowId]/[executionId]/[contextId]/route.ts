@@ -22,7 +22,7 @@ import type { SerializedSnapshot } from '@/executor/types'
 const logger = createLogger('WorkflowResumeAPI')
 
 export const runtime = 'nodejs'
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 function getStoredSnapshotConfig(pausedExecution: { executionSnapshot: unknown }): {
   executionMode?: 'sync' | 'stream' | 'async'

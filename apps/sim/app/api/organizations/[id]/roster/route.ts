@@ -24,6 +24,8 @@ interface RosterWorkspaceAccess {
   permission: 'admin' | 'write' | 'read'
 }
 
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(
   async (_request: NextRequest, { params }: { params: Promise<{ id: string }> }) => {
     try {

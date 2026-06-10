@@ -66,6 +66,8 @@ async function handler(request: NextRequest) {
   }
 }
 
+export const dynamic = 'force-static'
+
 export const GET = handler
 export const POST = handler
 export const PUT = handler

@@ -14,7 +14,7 @@ import { getScopesForService } from '@/lib/oauth/utils'
 
 const logger = createLogger('ShopifyAuthorize')
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 const SHOPIFY_SCOPES = getScopesForService('shopify').join(',')
 

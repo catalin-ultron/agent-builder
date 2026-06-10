@@ -22,6 +22,8 @@ async function assertWritePermission(userId: string, workspaceId: string) {
   return permission === 'admin' || permission === 'write'
 }
 
+export const dynamic = 'force-static'
+
 export const PATCH = withRouteHandler(
   async (request: NextRequest, context: { params: Promise<{ id: string; folderId: string }> }) => {
     const session = await getSession()

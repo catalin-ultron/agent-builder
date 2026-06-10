@@ -70,7 +70,7 @@ function negotiateProtocolVersion(rpcParams: unknown): string {
   return LATEST_PROTOCOL_VERSION
 }
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 interface RouteParams {
   serverId: string

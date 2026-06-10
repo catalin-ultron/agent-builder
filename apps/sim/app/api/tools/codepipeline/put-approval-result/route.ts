@@ -14,6 +14,8 @@ import { awsErrorStatus } from '@/app/api/tools/codepipeline/utils'
 
 const logger = createLogger('CodePipelinePutApprovalResult')
 
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler(async (request: NextRequest) => {
   try {
     const auth = await checkInternalAuth(request)

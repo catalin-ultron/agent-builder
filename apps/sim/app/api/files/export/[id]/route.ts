@@ -45,6 +45,8 @@ function deduplicatedFilename(preferred: string, existing: Set<string>, imageId:
   return `${base}_${imageId}${ext}`
 }
 
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(
   async (request: NextRequest, context: { params: Promise<{ id: string }> }) => {
     const parsed = await parseRequest(fileExportContract, request, context)

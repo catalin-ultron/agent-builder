@@ -10,6 +10,8 @@ import { createMongoDBConnection, sanitizeCollectionName } from '@/app/api/tools
 
 const logger = createLogger('MongoDBInsertAPI')
 
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler(async (request: NextRequest) => {
   const requestId = generateId().slice(0, 8)
   let client = null

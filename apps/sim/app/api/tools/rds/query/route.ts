@@ -10,6 +10,8 @@ import { createRdsClient, executeStatement, validateQuery } from '@/app/api/tool
 
 const logger = createLogger('RDSQueryAPI')
 
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler(async (request: NextRequest) => {
   const requestId = generateId().slice(0, 8)
 

@@ -17,7 +17,7 @@ import { categorizeError, createMcpErrorResponse, createMcpSuccessResponse } fro
 const logger = createLogger('McpToolDiscoveryAPI')
 const MCP_REFRESH_DISCOVERY_CONCURRENCY = 5
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 async function settleWithConcurrency<T, R>(
   items: T[],

@@ -10,7 +10,7 @@ import { parseAtlassianErrorMessage } from '@/tools/jira/utils'
 
 const logger = createLogger('ConfluenceSpacesAPI')
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 // List all spaces
 export const GET = withRouteHandler(async (request: NextRequest) => {

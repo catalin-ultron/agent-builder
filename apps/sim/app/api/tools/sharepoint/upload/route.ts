@@ -13,7 +13,7 @@ import { assertToolFileAccess } from '@/app/api/files/authorization'
 import type { MicrosoftGraphDriveItem } from '@/tools/onedrive/types'
 import type { SharepointSkippedFile, SharepointUploadError } from '@/tools/sharepoint/types'
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 const logger = createLogger('SharepointUploadAPI')
 const MAX_SHAREPOINT_UPLOAD_BYTES = 250 * 1024 * 1024

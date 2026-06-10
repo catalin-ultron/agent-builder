@@ -4,6 +4,8 @@ import { getAllowedMcpDomainsFromEnv } from '@/lib/core/config/feature-flags'
 import { getBaseUrl } from '@/lib/core/utils/urls'
 import { withRouteHandler } from '@/lib/core/utils/with-route-handler'
 
+export const dynamic = 'force-static'
+
 export const GET = withRouteHandler(async () => {
   const session = await getSession()
   if (!session?.user?.id) {

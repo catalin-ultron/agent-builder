@@ -36,6 +36,8 @@ const logger = createLogger('SwitchPlan')
  *   targetPlanName: string  -- e.g. 'pro_6000', 'team_25000'
  *   interval?: 'month' | 'year'  -- if omitted, keeps the current interval
  */
+export const dynamic = 'force-static'
+
 export const POST = withRouteHandler(async (request: NextRequest) => {
   const session = await getSession()
 

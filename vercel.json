@@ -1,0 +1,7 @@
+{
+  "framework": "nextjs",
+  "buildCommand": "cd apps/sim && bun run build",
+  "outputDirectory": "apps/sim/.next",
+  "installCommand": "bun install --no-save",
+  "regions": ["iad1"]
+}

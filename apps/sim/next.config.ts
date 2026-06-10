@@ -74,8 +74,7 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: isTruthy(env.DOCKER_BUILD),
   },
-  output: isTruthy(env.DOCKER_BUILD) ? 'standalone' : 'export',
-  distDir: 'out',
+  output: isTruthy(env.DOCKER_BUILD) ? 'standalone' : undefined,
   serverExternalPackages: [
     '@1password/sdk',
     'unpdf',

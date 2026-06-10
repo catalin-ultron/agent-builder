@@ -1,0 +1,1 @@
+{"jobId":"cefad3e2-8560-4f21-8ddc-d0a94740e642","session":"chat_33069b60-1c92-4036-b648-ab4850c5dfca","type":"exec","status":"error","queuedAt":1781135570245,"callback_url":"https://app.51ultron.com/api/internal/job-callback","startedAt":1781135570249,"finishedAt":1781135570293,"result":{"exit_code":null,"stdout":"","stderr":"","timed_out":false}}

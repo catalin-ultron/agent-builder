@@ -8,9 +8,11 @@ import {
 } from './lib/core/security/csp'
 
 const nextConfig: NextConfig = {
+  output: 'export',
   devIndicators: false,
   poweredByHeader: false,
   images: {
+    unoptimized: true,
     formats: ['image/avif', 'image/webp'],
     remotePatterns: [
       {
@@ -74,7 +76,6 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: isTruthy(env.DOCKER_BUILD),
   },
-  output: isTruthy(env.DOCKER_BUILD) ? 'standalone' : undefined,
   serverExternalPackages: [
     '@1password/sdk',
     'unpdf',
